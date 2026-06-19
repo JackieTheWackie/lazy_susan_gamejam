@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://byt1f14cqr2s8"]
+
+[ext_resource type="Texture2D" uid="uid://br4rtc3mjcfm" path="res://icon.svg" id="1_uwrxv"]
+[ext_resource type="Script" uid="uid://dg6uhlxbwiifg" path="res://scripts/camera_2d.gd" id="1_yqjtg"]
+
+[node name="Game" type="Node2D" unique_id=1428437104]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=523152189]
+position_smoothing_enabled = true
+position_smoothing_speed = 1.0
+script = ExtResource("1_yqjtg")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=436063759]
+position = Vector2(1, 275.5)
+scale = Vector2(3.28125, 4.4609375)
+texture = ExtResource("1_uwrxv")
