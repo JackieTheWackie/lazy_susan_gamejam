@@ -13,21 +13,15 @@ func _ready() -> void:
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("ui_cancel"):
 		if visible:
-			close_menu()
+			hide()
 		else:
-			open_menu()
-			
+			show()
+			yes_button.grab_focus()
 
-func open_menu() -> void:
-	show()
-	yes_button.grab_focus()
-	
-func close_menu() -> void:
-	hide()
 
 func _on_yes_pressed() -> void:
 	hide()
 	drink_menu.show()
 
 func _on_no_pressed() -> void:
-	close_menu()
+	hide()
