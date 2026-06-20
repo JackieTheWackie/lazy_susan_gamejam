@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://byt1f14cqr2s8"]
 
-[ext_resource type="Texture2D" uid="uid://br4rtc3mjcfm" path="res://icon.svg" id="1_uwrxv"]
 [ext_resource type="Script" uid="uid://dg6uhlxbwiifg" path="res://scripts/camera_2d.gd" id="1_yqjtg"]
-[ext_resource type="Script" uid="uid://spfhfr2vo27j" path="res://scripts/drinkmenu.gd" id="3_lnu2h"]
+[ext_resource type="Script" uid="uid://spfhfr2vo27j" path="res://scripts/confirmation_menu.gd" id="3_lnu2h"]
 [ext_resource type="Script" uid="uid://btea14wxvfbs2" path="res://scripts/lazy_susan.gd" id="4_iywne"]
+[ext_resource type="Script" uid="uid://ufjs54iamur6" path="res://scripts/drink_menu.gd" id="5_iywne"]
 [ext_resource type="Texture2D" uid="uid://3w7x7xgdehy8" path="res://assets/spin-test.png" id="5_p57ef"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_u5sy4"]
@@ -42,47 +42,15 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="LabelSettings" id="LabelSettings_lbhrr"]
+font_size = 32
+
 [node name="Game" type="Node2D" unique_id=1428437104]
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=523152189]
 position_smoothing_enabled = true
 position_smoothing_speed = 1.0
 script = ExtResource("1_yqjtg")
-
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=436063759]
-position = Vector2(1, 275.5)
-scale = Vector2(3.28125, 4.4609375)
-texture = ExtResource("1_uwrxv")
-
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=836725415]
-
-[node name="Control" type="Control" parent="CanvasLayer" unique_id=1373373198]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-script = ExtResource("3_lnu2h")
-
-[node name="ColorRect" type="ColorRect" parent="CanvasLayer/Control" unique_id=263423499]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer/Control" unique_id=1266503172]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Control/PanelContainer" unique_id=687459504]
-layout_mode = 2
-
-[node name="Label" type="Label" parent="CanvasLayer/Control/PanelContainer/VBoxContainer" unique_id=2147457011]
-layout_mode = 2
-text = "PISS"
-
-[node name="Button" type="Button" parent="CanvasLayer/Control/PanelContainer/VBoxContainer" unique_id=127862258]
-layout_mode = 2
-text = "YES!"
 
 [node name="Lazy Susan" type="Area2D" parent="." unique_id=785796523]
 script = ExtResource("4_iywne")
@@ -92,3 +60,129 @@ sprite_frames = SubResource("SpriteFrames_kvpfn")
 animation = &"spin"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Lazy Susan" unique_id=2066615654]
+
+[node name="Confirmation Menu" type="CanvasLayer" parent="." unique_id=836725415]
+
+[node name="Control" type="Control" parent="Confirmation Menu" unique_id=1373373198]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 250.0
+offset_top = 74.0
+offset_right = -629.0
+offset_bottom = 47.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("3_lnu2h")
+
+[node name="ColorRect" type="ColorRect" parent="Confirmation Menu/Control" unique_id=263423499]
+layout_mode = 0
+offset_right = 722.0
+offset_bottom = 499.0
+color = Color(0.37712613, 0.38772944, 0.3922603, 1)
+
+[node name="PanelContainer" type="PanelContainer" parent="Confirmation Menu/Control" unique_id=1266503172]
+layout_mode = 0
+offset_right = 724.0
+offset_bottom = 502.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Confirmation Menu/Control/PanelContainer" unique_id=687459504]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="Confirmation Menu/Control/PanelContainer/VBoxContainer" unique_id=2147457011]
+layout_mode = 2
+text = "Are you ready?"
+label_settings = SubResource("LabelSettings_lbhrr")
+horizontal_alignment = 1
+
+[node name="Yes" type="Button" parent="Confirmation Menu/Control/PanelContainer/VBoxContainer" unique_id=127862258]
+layout_mode = 2
+text = "YES!"
+
+[node name="No" type="Button" parent="Confirmation Menu/Control/PanelContainer/VBoxContainer" unique_id=1412264491]
+layout_mode = 2
+text = "NO!"
+
+[node name="Drink Menu" type="CanvasLayer" parent="." unique_id=1393146838]
+
+[node name="Control" type="Control" parent="Drink Menu" unique_id=1211320975]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 250.0
+offset_top = 74.0
+offset_right = -629.0
+offset_bottom = 47.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("5_iywne")
+
+[node name="ColorRect" type="ColorRect" parent="Drink Menu/Control" unique_id=244497835]
+layout_mode = 0
+offset_right = 722.0
+offset_bottom = 499.0
+color = Color(0.37712613, 0.38772944, 0.3922603, 1)
+
+[node name="PanelContainer" type="PanelContainer" parent="Drink Menu/Control" unique_id=606950170]
+layout_mode = 0
+offset_right = 724.0
+offset_bottom = 502.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Drink Menu/Control/PanelContainer" unique_id=400429488]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="Drink Menu/Control/PanelContainer/VBoxContainer" unique_id=188072032]
+layout_mode = 2
+text = "Select the Poisoned Beverage"
+label_settings = SubResource("LabelSettings_lbhrr")
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Drink Menu/Control/PanelContainer/VBoxContainer" unique_id=491242314]
+layout_mode = 2
+alignment = 1
+
+[node name="1" type="Button" parent="Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContainer" unique_id=43502212]
+custom_minimum_size = Vector2(175, 220)
+layout_mode = 2
+text = "1"
+
+[node name="2" type="Button" parent="Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContainer" unique_id=961503667]
+custom_minimum_size = Vector2(175, 210)
+layout_mode = 2
+text = "2"
+
+[node name="3" type="Button" parent="Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContainer" unique_id=476747206]
+custom_minimum_size = Vector2(175, 210)
+layout_mode = 2
+text = "3"
+
+[node name="4" type="Button" parent="Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContainer" unique_id=1594817292]
+custom_minimum_size = Vector2(175, 215)
+layout_mode = 2
+text = "4"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Drink Menu/Control/PanelContainer/VBoxContainer" unique_id=2126907456]
+layout_mode = 2
+alignment = 1
+
+[node name="5" type="Button" parent="Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContainer2" unique_id=1285137257]
+custom_minimum_size = Vector2(175, 220)
+layout_mode = 2
+text = "5"
+
+[node name="6" type="Button" parent="Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContainer2" unique_id=1981596324]
+custom_minimum_size = Vector2(175, 215)
+layout_mode = 2
+text = "6"
+
+[node name="7" type="Button" parent="Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContainer2" unique_id=1508524209]
+custom_minimum_size = Vector2(175, 215)
+layout_mode = 2
+text = "7"
+
+[node name="8" type="Button" parent="Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContainer2" unique_id=1164349420]
+custom_minimum_size = Vector2(175, 215)
+layout_mode = 2
+text = "8"
