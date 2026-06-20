@@ -2,6 +2,45 @@
 
 [ext_resource type="Texture2D" uid="uid://br4rtc3mjcfm" path="res://icon.svg" id="1_uwrxv"]
 [ext_resource type="Script" uid="uid://dg6uhlxbwiifg" path="res://scripts/camera_2d.gd" id="1_yqjtg"]
+[ext_resource type="Script" uid="uid://spfhfr2vo27j" path="res://scripts/drinkmenu.gd" id="3_lnu2h"]
+[ext_resource type="Script" uid="uid://btea14wxvfbs2" path="res://scripts/lazy_susan.gd" id="4_iywne"]
+[ext_resource type="Texture2D" uid="uid://3w7x7xgdehy8" path="res://assets/spin-test.png" id="5_p57ef"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u5sy4"]
+atlas = ExtResource("5_p57ef")
+region = Rect2(0, 0, 600, 600)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gee14"]
+atlas = ExtResource("5_p57ef")
+region = Rect2(600, 0, 600, 600)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0tnpc"]
+atlas = ExtResource("5_p57ef")
+region = Rect2(0, 600, 600, 600)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vtaks"]
+atlas = ExtResource("5_p57ef")
+region = Rect2(600, 600, 600, 600)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kvpfn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u5sy4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gee14")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0tnpc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vtaks")
+}],
+"loop": true,
+"name": &"spin",
+"speed": 5.0
+}]
 
 [node name="Game" type="Node2D" unique_id=1428437104]
 
@@ -14,3 +53,42 @@ script = ExtResource("1_yqjtg")
 position = Vector2(1, 275.5)
 scale = Vector2(3.28125, 4.4609375)
 texture = ExtResource("1_uwrxv")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=836725415]
+
+[node name="Control" type="Control" parent="CanvasLayer" unique_id=1373373198]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("3_lnu2h")
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/Control" unique_id=263423499]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer/Control" unique_id=1266503172]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Control/PanelContainer" unique_id=687459504]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/Control/PanelContainer/VBoxContainer" unique_id=2147457011]
+layout_mode = 2
+text = "PISS"
+
+[node name="Button" type="Button" parent="CanvasLayer/Control/PanelContainer/VBoxContainer" unique_id=127862258]
+layout_mode = 2
+text = "YES!"
+
+[node name="Lazy Susan" type="Area2D" parent="." unique_id=785796523]
+script = ExtResource("4_iywne")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Lazy Susan" unique_id=438128403]
+sprite_frames = SubResource("SpriteFrames_kvpfn")
+animation = &"spin"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Lazy Susan" unique_id=2066615654]
