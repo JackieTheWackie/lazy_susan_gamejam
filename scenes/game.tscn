@@ -5,8 +5,11 @@
 [ext_resource type="Script" uid="uid://spfhfr2vo27j" path="res://scripts/confirmation_menu.gd" id="3_lnu2h"]
 [ext_resource type="Script" uid="uid://btea14wxvfbs2" path="res://scripts/lazy_susan.gd" id="4_iywne"]
 [ext_resource type="Script" uid="uid://ufjs54iamur6" path="res://scripts/drink_menu.gd" id="5_iywne"]
+[ext_resource type="Texture2D" uid="uid://cnqyj1jb0pbek" path="res://assets/drinks/drink_1.png" id="6_gee14"]
 [ext_resource type="Script" uid="uid://pbot1780v53o" path="res://scripts/target_menu.gd" id="6_p57ef"]
+[ext_resource type="Texture2D" uid="uid://bwgtvyjtfflpv" path="res://assets/drinks/drink_2.png" id="7_0tnpc"]
 [ext_resource type="Script" uid="uid://siea14effeq5" path="res://scripts/final_menu.gd" id="7_u5sy4"]
+[ext_resource type="Texture2D" uid="uid://c26jlcid1v7e2" path="res://assets/drinks/drink_3.png" id="8_vtaks"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_p57ef"]
 atlas = ExtResource("3_iywne")
@@ -161,20 +164,26 @@ horizontal_alignment = 1
 layout_mode = 2
 alignment = 1
 
-[node name="1" type="Button" parent="Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContainer" unique_id=43502212]
+[node name="1" type="TextureButton" parent="Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContainer" unique_id=1115944873]
 custom_minimum_size = Vector2(175, 220)
 layout_mode = 2
-text = "1"
+texture_normal = ExtResource("6_gee14")
+ignore_texture_size = true
+stretch_mode = 5
 
-[node name="2" type="Button" parent="Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContainer" unique_id=961503667]
-custom_minimum_size = Vector2(175, 210)
+[node name="2" type="TextureButton" parent="Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContainer" unique_id=1234894407]
+custom_minimum_size = Vector2(175, 220)
 layout_mode = 2
-text = "2"
+texture_normal = ExtResource("7_0tnpc")
+ignore_texture_size = true
+stretch_mode = 4
 
-[node name="3" type="Button" parent="Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContainer" unique_id=476747206]
-custom_minimum_size = Vector2(175, 210)
+[node name="3" type="TextureButton" parent="Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContainer" unique_id=1869311525]
+custom_minimum_size = Vector2(175, 220)
 layout_mode = 2
-text = "3"
+texture_normal = ExtResource("8_vtaks")
+ignore_texture_size = true
+stretch_mode = 4
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="Drink Menu/Control/PanelContainer/VBoxContainer" unique_id=2126907456]
 layout_mode = 2
@@ -196,6 +205,7 @@ layout_mode = 2
 text = "6"
 
 [node name="Target Menu" type="CanvasLayer" parent="." unique_id=1541135499]
+visible = false
 
 [node name="Control" type="Control" parent="Target Menu" unique_id=1878676991]
 layout_mode = 3
@@ -250,6 +260,7 @@ layout_mode = 2
 text = "3"
 
 [node name="Final Menu" type="CanvasLayer" parent="." unique_id=856374487]
+visible = false
 
 [node name="Control" type="Control" parent="Final Menu" unique_id=660241745]
 layout_mode = 3

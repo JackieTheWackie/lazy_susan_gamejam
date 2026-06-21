@@ -1,8 +1,8 @@
 extends Control
 
-@onready var drink_1: Button = $"PanelContainer/VBoxContainer/HBoxContainer/1"
-@onready var drink_2: Button = $"PanelContainer/VBoxContainer/HBoxContainer/2"
-@onready var drink_3: Button = $"PanelContainer/VBoxContainer/HBoxContainer/3"
+@onready var drink_1: TextureButton = $"PanelContainer/VBoxContainer/HBoxContainer/1"
+@onready var drink_2: TextureButton = $"PanelContainer/VBoxContainer/HBoxContainer/2"
+@onready var drink_3: TextureButton = $"PanelContainer/VBoxContainer/HBoxContainer/3"
 @onready var drink_4: Button = $"PanelContainer/VBoxContainer/HBoxContainer2/4"
 @onready var drink_5: Button = $"PanelContainer/VBoxContainer/HBoxContainer2/5"
 @onready var drink_6: Button = $"PanelContainer/VBoxContainer/HBoxContainer2/6"
