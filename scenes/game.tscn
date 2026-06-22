@@ -1,63 +1,82 @@
 [gd_scene format=3 uid="uid://byt1f14cqr2s8"]
 
 [ext_resource type="Script" uid="uid://dg6uhlxbwiifg" path="res://scripts/camera_2d.gd" id="1_yqjtg"]
-[ext_resource type="Texture2D" uid="uid://cy5rjaktgtck6" path="res://assets/spinner2.jpg" id="3_iywne"]
+[ext_resource type="Texture2D" uid="uid://chdlhphi2bxg" path="res://assets/drinks/SpriteSheet.png" id="3_ir15t"]
 [ext_resource type="Script" uid="uid://spfhfr2vo27j" path="res://scripts/confirmation_menu.gd" id="3_lnu2h"]
 [ext_resource type="Script" uid="uid://btea14wxvfbs2" path="res://scripts/lazy_susan.gd" id="4_iywne"]
 [ext_resource type="Script" uid="uid://ufjs54iamur6" path="res://scripts/drink_menu.gd" id="5_iywne"]
-[ext_resource type="Texture2D" uid="uid://cnqyj1jb0pbek" path="res://assets/drinks/drink_1.png" id="6_gee14"]
+[ext_resource type="Texture2D" uid="uid://2hw2fbuujkg1" path="res://assets/drinks/Drink_1.png" id="6_ir15t"]
 [ext_resource type="Script" uid="uid://pbot1780v53o" path="res://scripts/target_menu.gd" id="6_p57ef"]
-[ext_resource type="Texture2D" uid="uid://bwgtvyjtfflpv" path="res://assets/drinks/drink_2.png" id="7_0tnpc"]
+[ext_resource type="Texture2D" uid="uid://2yuvqwkkhfsw" path="res://assets/drinks/Drink_2.png" id="7_ca42v"]
 [ext_resource type="Script" uid="uid://siea14effeq5" path="res://scripts/final_menu.gd" id="7_u5sy4"]
-[ext_resource type="Texture2D" uid="uid://c26jlcid1v7e2" path="res://assets/drinks/drink_3.png" id="8_vtaks"]
+[ext_resource type="Texture2D" uid="uid://ckwy7uv5d7jv3" path="res://assets/drinks/Drink_3.png" id="8_rysoc"]
+[ext_resource type="Texture2D" uid="uid://dt8u2qdt08jw4" path="res://assets/drinks/Drink_4.png" id="9_ssvqc"]
+[ext_resource type="Texture2D" uid="uid://c7a3855g714aa" path="res://assets/drinks/Drink_5.png" id="10_264po"]
+[ext_resource type="Texture2D" uid="uid://br0jy4brl35ma" path="res://assets/drinks/Drink_6.png" id="11_1kice"]
+[ext_resource type="Texture2D" uid="uid://dr1i322246nmr" path="res://assets/drinks/Drink_7.png" id="12_5newe"]
+[ext_resource type="Texture2D" uid="uid://b4yq0i8k8wf1r" path="res://assets/drinks/Drink_8.png" id="13_37s47"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_p57ef"]
-atlas = ExtResource("3_iywne")
-region = Rect2(0, 0, 1024, 921)
+[sub_resource type="AtlasTexture" id="AtlasTexture_bt5mj"]
+atlas = ExtResource("3_ir15t")
+region = Rect2(0, 0, 1411, 721)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_u5sy4"]
-atlas = ExtResource("3_iywne")
-region = Rect2(1024, 0, 1024, 921)
+[sub_resource type="AtlasTexture" id="AtlasTexture_e1j6l"]
+atlas = ExtResource("3_ir15t")
+region = Rect2(1411, 0, 1411, 721)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_gee14"]
-atlas = ExtResource("3_iywne")
-region = Rect2(2048, 0, 1024, 921)
+[sub_resource type="AtlasTexture" id="AtlasTexture_pl11u"]
+atlas = ExtResource("3_ir15t")
+region = Rect2(0, 721, 1411, 721)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_0tnpc"]
-atlas = ExtResource("3_iywne")
-region = Rect2(0, 921, 1024, 921)
+[sub_resource type="AtlasTexture" id="AtlasTexture_bhx41"]
+atlas = ExtResource("3_ir15t")
+region = Rect2(1411, 721, 1411, 721)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_vtaks"]
-atlas = ExtResource("3_iywne")
-region = Rect2(1024, 921, 1024, 921)
+[sub_resource type="AtlasTexture" id="AtlasTexture_qnb83"]
+atlas = ExtResource("3_ir15t")
+region = Rect2(0, 1442, 1411, 721)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_kvpfn"]
-atlas = ExtResource("3_iywne")
-region = Rect2(2048, 921, 1024, 921)
+[sub_resource type="AtlasTexture" id="AtlasTexture_sww3w"]
+atlas = ExtResource("3_ir15t")
+region = Rect2(1411, 1442, 1411, 721)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_kvpfn"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_suyxu"]
+atlas = ExtResource("3_ir15t")
+region = Rect2(0, 2163, 1411, 721)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sgl2t"]
+atlas = ExtResource("3_ir15t")
+region = Rect2(1411, 2163, 1411, 721)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qouja"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_p57ef")
+"texture": SubResource("AtlasTexture_bt5mj")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_u5sy4")
+"texture": SubResource("AtlasTexture_e1j6l")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_gee14")
+"texture": SubResource("AtlasTexture_pl11u")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_0tnpc")
+"texture": SubResource("AtlasTexture_bhx41")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_vtaks")
+"texture": SubResource("AtlasTexture_qnb83")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_kvpfn")
+"texture": SubResource("AtlasTexture_sww3w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_suyxu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sgl2t")
 }],
 "loop": true,
-"name": &"spin",
+"name": &"default",
 "speed": 5.0
 }]
 
@@ -76,11 +95,13 @@ script = ExtResource("4_iywne")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Lazy Susan" unique_id=438128403]
 position = Vector2(-2, -18.000008)
-scale = Vector2(0.74902344, 0.7627579)
-sprite_frames = SubResource("SpriteFrames_kvpfn")
-animation = &"spin"
+scale = Vector2(0.4, 0.407)
+sprite_frames = SubResource("SpriteFrames_qouja")
+frame = 3
+frame_progress = 0.20624879
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Lazy Susan" unique_id=2066615654]
+position = Vector2(-2.5, -17.5)
 
 [node name="Confirmation Menu" type="CanvasLayer" parent="." unique_id=836725415]
 
@@ -167,21 +188,28 @@ alignment = 1
 [node name="1" type="TextureButton" parent="Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContainer" unique_id=1115944873]
 custom_minimum_size = Vector2(175, 220)
 layout_mode = 2
-texture_normal = ExtResource("6_gee14")
+texture_normal = ExtResource("6_ir15t")
 ignore_texture_size = true
 stretch_mode = 5
 
 [node name="2" type="TextureButton" parent="Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContainer" unique_id=1234894407]
 custom_minimum_size = Vector2(175, 220)
 layout_mode = 2
-texture_normal = ExtResource("7_0tnpc")
+texture_normal = ExtResource("7_ca42v")
 ignore_texture_size = true
 stretch_mode = 4
 
 [node name="3" type="TextureButton" parent="Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContainer" unique_id=1869311525]
 custom_minimum_size = Vector2(175, 220)
 layout_mode = 2
-texture_normal = ExtResource("8_vtaks")
+texture_normal = ExtResource("8_rysoc")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="4" type="TextureButton" parent="Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContainer" unique_id=860856202]
+custom_minimum_size = Vector2(175, 220)
+layout_mode = 2
+texture_normal = ExtResource("9_ssvqc")
 ignore_texture_size = true
 stretch_mode = 4
 
@@ -189,23 +217,35 @@ stretch_mode = 4
 layout_mode = 2
 alignment = 1
 
-[node name="4" type="Button" parent="Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContainer2" unique_id=1594817292]
-custom_minimum_size = Vector2(175, 215)
-layout_mode = 2
-text = "4"
-
-[node name="5" type="Button" parent="Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContainer2" unique_id=1285137257]
+[node name="5" type="TextureButton" parent="Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContainer2" unique_id=921827423]
 custom_minimum_size = Vector2(175, 220)
 layout_mode = 2
-text = "5"
+texture_normal = ExtResource("10_264po")
+ignore_texture_size = true
+stretch_mode = 5
 
-[node name="6" type="Button" parent="Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContainer2" unique_id=1981596324]
-custom_minimum_size = Vector2(175, 215)
+[node name="6" type="TextureButton" parent="Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContainer2" unique_id=1194769638]
+custom_minimum_size = Vector2(175, 220)
 layout_mode = 2
-text = "6"
+texture_normal = ExtResource("11_1kice")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="7" type="TextureButton" parent="Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContainer2" unique_id=75432379]
+custom_minimum_size = Vector2(175, 220)
+layout_mode = 2
+texture_normal = ExtResource("12_5newe")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="8" type="TextureButton" parent="Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContainer2" unique_id=1842970401]
+custom_minimum_size = Vector2(175, 220)
+layout_mode = 2
+texture_normal = ExtResource("13_37s47")
+ignore_texture_size = true
+stretch_mode = 4
 
 [node name="Target Menu" type="CanvasLayer" parent="." unique_id=1541135499]
-visible = false
 
 [node name="Control" type="Control" parent="Target Menu" unique_id=1878676991]
 layout_mode = 3
@@ -260,7 +300,6 @@ layout_mode = 2
 text = "3"
 
 [node name="Final Menu" type="CanvasLayer" parent="." unique_id=856374487]
-visible = false
 
 [node name="Control" type="Control" parent="Final Menu" unique_id=660241745]
 layout_mode = 3

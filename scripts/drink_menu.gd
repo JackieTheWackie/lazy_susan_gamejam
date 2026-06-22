@@ -3,9 +3,12 @@ extends Control
 @onready var drink_1: TextureButton = $"PanelContainer/VBoxContainer/HBoxContainer/1"
 @onready var drink_2: TextureButton = $"PanelContainer/VBoxContainer/HBoxContainer/2"
 @onready var drink_3: TextureButton = $"PanelContainer/VBoxContainer/HBoxContainer/3"
-@onready var drink_4: Button = $"PanelContainer/VBoxContainer/HBoxContainer2/4"
-@onready var drink_5: Button = $"PanelContainer/VBoxContainer/HBoxContainer2/5"
-@onready var drink_6: Button = $"PanelContainer/VBoxContainer/HBoxContainer2/6"
+@onready var drink_4: TextureButton = $"PanelContainer/VBoxContainer/HBoxContainer/4"
+@onready var drink_5: TextureButton = $"PanelContainer/VBoxContainer/HBoxContainer2/5"
+@onready var drink_6: TextureButton = $"PanelContainer/VBoxContainer/HBoxContainer2/6"
+@onready var drink_7: TextureButton = $"PanelContainer/VBoxContainer/HBoxContainer2/7"
+@onready var drink_8: TextureButton = $"PanelContainer/VBoxContainer/HBoxContainer2/8"
+
 @onready var target_menu: Control = $"../../Target Menu/Control"
 
 func _ready() -> void:
@@ -16,6 +19,8 @@ func _ready() -> void:
 	drink_4.pressed.connect(drink_check.bind(4))
 	drink_5.pressed.connect(drink_check.bind(5))
 	drink_6.pressed.connect(drink_check.bind(6))
+	drink_7.pressed.connect(drink_check.bind(7))
+	drink_8.pressed.connect(drink_check.bind(8))
 	print(GameManager.actual_drink)
 
 #Check if the drink is correct then go to the next menu
