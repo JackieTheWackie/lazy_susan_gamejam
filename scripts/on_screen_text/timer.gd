@@ -4,13 +4,22 @@ extends Node
 @onready var label: Label = $Label
 @onready var drink_menu: Control = $"../Drink Menu/Control"
 @onready var phone_call: TextEdit = $"../Phone Call/Phone Call"
-@onready var phone_call_timing: int
+@onready var waiter: TextEdit = $"../Waiter/Waiter"
+@onready var hint_timing: int
+@onready var phone_hint: bool = true
 @onready var rng = RandomNumberGenerator.new()
+# How long a hint should show
+@onready var hint_length = 5
+
+# Time period in which a hint could occur
+@onready var hint_range = 15
+
+# Buffer time between hints
+@onready var hint_buffer = 10;
 
 func _ready() -> void:
-	phone_call_timing = rng.randi_range(timer.wait_time - 15, timer.wait_time)
+	hint_timing = rng.randi_range(timer.wait_time - 15, timer.wait_time)
 	timer.timeout.connect(_on_timeout)
-	print(phone_call_timing)
 	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -21,15 +30,28 @@ func _process(delta: float) -> void:
 func _time_left():
 	var time_left = timer.time_left
 	
-	if phone_call_timing == floori(time_left):
-		phone_call.show()
-	elif phone_call_timing - 5 == floori(time_left):
-		phone_call.hide()
-		if timer.time_left < 30:
-			phone_call_timing = 20
+	# If it's time for a hint
+	if hint_timing == floori(time_left):
+		# Show the hint (alternating between phone and waiter)
+		if phone_hint:
+			phone_call.show()
 		else:
-			phone_call_timing = rng.randi_range(timer.time_left - 15, timer.time_left)
-		print(phone_call_timing)
+			waiter.show()
+	# After a certain amount of time, hide currently showing hint
+	elif hint_timing - hint_length == floori(time_left):
+		if phone_hint:
+			phone_call.hide()
+		else:
+			waiter.hide()
+		
+		# Alternate to other hint type here
+		phone_hint = !phone_hint
+		
+		# If there's only 30 seconds left, show one more hint then cut it off
+		if timer.time_left < 30:
+			hint_timing = 20
+		else:
+			hint_timing = rng.randi_range(timer.time_left - hint_range, timer.time_left - hint_buffer)
 		
 	var minute = floor(time_left / 60)
 	var second = int(time_left) % 60
