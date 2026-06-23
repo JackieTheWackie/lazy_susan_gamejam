@@ -1,19 +1,21 @@
 [gd_scene format=3 uid="uid://byt1f14cqr2s8"]
 
-[ext_resource type="Script" uid="uid://dg6uhlxbwiifg" path="res://scripts/camera_2d.gd" id="1_yqjtg"]
+[ext_resource type="Script" uid="uid://dg6uhlxbwiifg" path="res://scripts/gameplay/camera_2d.gd" id="1_yqjtg"]
 [ext_resource type="Texture2D" uid="uid://chdlhphi2bxg" path="res://assets/drinks/SpriteSheet.png" id="3_ir15t"]
-[ext_resource type="Script" uid="uid://spfhfr2vo27j" path="res://scripts/confirmation_menu.gd" id="3_lnu2h"]
-[ext_resource type="Script" uid="uid://btea14wxvfbs2" path="res://scripts/lazy_susan.gd" id="4_iywne"]
-[ext_resource type="Script" uid="uid://ufjs54iamur6" path="res://scripts/drink_menu.gd" id="5_iywne"]
+[ext_resource type="Script" uid="uid://spfhfr2vo27j" path="res://scripts/menus/confirmation_menu.gd" id="3_lnu2h"]
+[ext_resource type="Script" uid="uid://btea14wxvfbs2" path="res://scripts/gameplay/lazy_susan.gd" id="4_iywne"]
+[ext_resource type="Script" uid="uid://ufjs54iamur6" path="res://scripts/menus/drink_menu.gd" id="5_iywne"]
 [ext_resource type="Texture2D" uid="uid://2hw2fbuujkg1" path="res://assets/drinks/drink_1.png" id="6_ir15t"]
-[ext_resource type="Script" uid="uid://pbot1780v53o" path="res://scripts/target_menu.gd" id="6_p57ef"]
+[ext_resource type="Script" uid="uid://pbot1780v53o" path="res://scripts/menus/target_menu.gd" id="6_p57ef"]
 [ext_resource type="Texture2D" uid="uid://2yuvqwkkhfsw" path="res://assets/drinks/drink_2.png" id="7_ca42v"]
-[ext_resource type="Script" uid="uid://siea14effeq5" path="res://scripts/final_menu.gd" id="7_u5sy4"]
+[ext_resource type="Script" uid="uid://siea14effeq5" path="res://scripts/menus/final_menu.gd" id="7_u5sy4"]
 [ext_resource type="Texture2D" uid="uid://ckwy7uv5d7jv3" path="res://assets/drinks/drink_3.png" id="8_rysoc"]
 [ext_resource type="Texture2D" uid="uid://dt8u2qdt08jw4" path="res://assets/drinks/drink_4.png" id="9_ssvqc"]
 [ext_resource type="Texture2D" uid="uid://c7a3855g714aa" path="res://assets/drinks/Drink_5.png" id="10_264po"]
 [ext_resource type="Texture2D" uid="uid://br0jy4brl35ma" path="res://assets/drinks/Drink_6.png" id="11_1kice"]
+[ext_resource type="Script" uid="uid://dd1cvf04wu7is" path="res://scripts/on_screen_text/timer.gd" id="11_dinhu"]
 [ext_resource type="Texture2D" uid="uid://dr1i322246nmr" path="res://assets/drinks/Drink_7.png" id="12_5newe"]
+[ext_resource type="Script" uid="uid://deaai2bhdeei8" path="res://scripts/on_screen_text/phone_call.gd" id="12_kvuet"]
 [ext_resource type="Texture2D" uid="uid://b4yq0i8k8wf1r" path="res://assets/drinks/Drink_8.png" id="13_37s47"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bt5mj"]
@@ -349,3 +351,27 @@ text = "YES!"
 [node name="No" type="Button" parent="Final Menu/Control/PanelContainer/VBoxContainer" unique_id=1924340631]
 layout_mode = 2
 text = "NO!"
+
+[node name="Phone Call" type="Node" parent="." unique_id=228923896]
+
+[node name="Phone Call" type="TextEdit" parent="Phone Call" unique_id=419674656]
+offset_left = -359.0
+offset_top = 238.0
+offset_right = -67.0
+offset_bottom = 322.0
+theme_override_font_sizes/font_size = 30
+text = "hgfhfgh"
+script = ExtResource("12_kvuet")
+
+[node name="Timer" type="Node" parent="." unique_id=902966783]
+script = ExtResource("11_dinhu")
+
+[node name="Label" type="Label" parent="Timer" unique_id=444015267]
+offset_left = 413.0
+offset_top = -308.0
+offset_right = 538.0
+offset_bottom = -249.0
+
+[node name="Timer" type="Timer" parent="Timer" unique_id=2095725279]
+one_shot = true
+autostart = true
