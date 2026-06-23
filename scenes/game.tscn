@@ -373,5 +373,6 @@ offset_right = 538.0
 offset_bottom = -249.0
 
 [node name="Timer" type="Timer" parent="Timer" unique_id=2095725279]
+wait_time = 60.0
 one_shot = true
 autostart = true
