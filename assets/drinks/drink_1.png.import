@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://2hw2fbuujkg1"
-path="res://.godot/imported/Drink_1.png-72d587b36befecd3933d233dcb640e8f.ctex"
+path="res://.godot/imported/drink_1.png-2ed756ec1ceefbe64fee4650d3f46872.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/drinks/Drink_1.png"
-dest_files=["res://.godot/imported/Drink_1.png-72d587b36befecd3933d233dcb640e8f.ctex"]
+source_file="res://assets/drinks/drink_1.png"
+dest_files=["res://.godot/imported/drink_1.png-2ed756ec1ceefbe64fee4650d3f46872.ctex"]
 
 [params]
 

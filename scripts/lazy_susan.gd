@@ -1,7 +1,7 @@
 extends Area2D
 
 @onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
-@onready var last_frame = sprite.sprite_frames.get_frame_count("spin") - 1
+@onready var last_frame = sprite.sprite_frames.get_frame_count("default") - 1
 
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("ui_right"):

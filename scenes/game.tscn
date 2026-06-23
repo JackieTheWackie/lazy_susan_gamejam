@@ -5,12 +5,12 @@
 [ext_resource type="Script" uid="uid://spfhfr2vo27j" path="res://scripts/confirmation_menu.gd" id="3_lnu2h"]
 [ext_resource type="Script" uid="uid://btea14wxvfbs2" path="res://scripts/lazy_susan.gd" id="4_iywne"]
 [ext_resource type="Script" uid="uid://ufjs54iamur6" path="res://scripts/drink_menu.gd" id="5_iywne"]
-[ext_resource type="Texture2D" uid="uid://2hw2fbuujkg1" path="res://assets/drinks/Drink_1.png" id="6_ir15t"]
+[ext_resource type="Texture2D" uid="uid://2hw2fbuujkg1" path="res://assets/drinks/drink_1.png" id="6_ir15t"]
 [ext_resource type="Script" uid="uid://pbot1780v53o" path="res://scripts/target_menu.gd" id="6_p57ef"]
-[ext_resource type="Texture2D" uid="uid://2yuvqwkkhfsw" path="res://assets/drinks/Drink_2.png" id="7_ca42v"]
+[ext_resource type="Texture2D" uid="uid://2yuvqwkkhfsw" path="res://assets/drinks/drink_2.png" id="7_ca42v"]
 [ext_resource type="Script" uid="uid://siea14effeq5" path="res://scripts/final_menu.gd" id="7_u5sy4"]
-[ext_resource type="Texture2D" uid="uid://ckwy7uv5d7jv3" path="res://assets/drinks/Drink_3.png" id="8_rysoc"]
-[ext_resource type="Texture2D" uid="uid://dt8u2qdt08jw4" path="res://assets/drinks/Drink_4.png" id="9_ssvqc"]
+[ext_resource type="Texture2D" uid="uid://ckwy7uv5d7jv3" path="res://assets/drinks/drink_3.png" id="8_rysoc"]
+[ext_resource type="Texture2D" uid="uid://dt8u2qdt08jw4" path="res://assets/drinks/drink_4.png" id="9_ssvqc"]
 [ext_resource type="Texture2D" uid="uid://c7a3855g714aa" path="res://assets/drinks/Drink_5.png" id="10_264po"]
 [ext_resource type="Texture2D" uid="uid://br0jy4brl35ma" path="res://assets/drinks/Drink_6.png" id="11_1kice"]
 [ext_resource type="Texture2D" uid="uid://dr1i322246nmr" path="res://assets/drinks/Drink_7.png" id="12_5newe"]
@@ -97,8 +97,6 @@ script = ExtResource("4_iywne")
 position = Vector2(-2, -18.000008)
 scale = Vector2(0.4, 0.407)
 sprite_frames = SubResource("SpriteFrames_qouja")
-frame = 3
-frame_progress = 0.20624879
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Lazy Susan" unique_id=2066615654]
 position = Vector2(-2.5, -17.5)
