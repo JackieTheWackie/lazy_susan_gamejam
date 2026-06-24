@@ -18,13 +18,17 @@ extends Node
 @onready var hint_buffer = 10;
 
 func _ready() -> void:
-	hint_timing = rng.randi_range(timer.wait_time - 15, timer.wait_time)
+	hint_timing = rng.randi_range(timer.wait_time - 15, timer.wait_time - 3)
 	timer.timeout.connect(_on_timeout)
 	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	label.text = "%02d:%02d" % _time_left()
+	if !GameManager.decision_time:
+		label.text = "%02d:%02d" % _time_left()
+	else:
+		timer.stop()
+		label.hide()
 	
 
 func _time_left():
@@ -59,3 +63,4 @@ func _time_left():
 
 func _on_timeout() -> void:
 	drink_menu.show()
+	GameManager.decision_time = true
