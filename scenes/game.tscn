@@ -363,6 +363,17 @@ theme_override_font_sizes/font_size = 30
 text = "hgfhfgh"
 script = ExtResource("12_kvuet")
 
+[node name="Waiter" type="Node" parent="." unique_id=120914305]
+
+[node name="Waiter" type="TextEdit" parent="Waiter" unique_id=454062786]
+offset_left = 304.0
+offset_top = -37.0
+offset_right = 596.0
+offset_bottom = 47.0
+theme_override_font_sizes/font_size = 30
+text = "asddasd"
+script = ExtResource("12_kvuet")
+
 [node name="Timer" type="Node" parent="." unique_id=902966783]
 script = ExtResource("11_dinhu")
 
@@ -373,5 +384,6 @@ offset_right = 538.0
 offset_bottom = -249.0
 
 [node name="Timer" type="Timer" parent="Timer" unique_id=2095725279]
+wait_time = 120.0
 one_shot = true
 autostart = true
