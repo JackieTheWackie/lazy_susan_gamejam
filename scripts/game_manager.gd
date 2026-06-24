@@ -11,67 +11,50 @@ var decision_time: bool = false
 @onready var drink_hints = [
 	{
 		"number": 1,
-		"hints": [
-			"Glass with a stem",
-			"Flavored Rim",
-			"Decorative Garnish"
-		]
+		"hints": ["Glass with a stem", "Flavored Rim", "Decorative Garnish"]
 	},
 	{
 		"number": 2,
-		"hints": [
-			"Glass with a stem",
-			"Swirly Liquid",
-			"Third thing"
-		]
+		"hints": ["Glass with a stem", "Swirly Liquid", "Third Thing"]
 	},
 	{
 		"number": 3,
-		"hints": [
-			"Glass without a stem",
-			"On the rocks",
-			"Garnish"
-		]
+		"hints": ["Glass without a stem", "On the rocks", "Garnish"]
 	},
 	{
 		"number": 4,
-		"hints": [
-			"Glass without a stem",
-			"On the rocks",
-			"Fizzy liquid"
-		]
+		"hints": ["Glass without a stem", "On the rocks", "Fizzy Liquid"]
 	},
 	{
 		"number": 5,
-		"hints": [
-			"Glass with a stem",
-			"Swirly liquid",
-			"Fruit Garnish"
-		]
+		"hints": ["Glass with a stem", "Swirly Liquid", "Fruit Garnish"]
 	},
 	{
 		"number": 6,
-		"hints": [
-			"Glass with a stem",
-			"Flavored Rim",
-			"Submerged Fruit"
-		]
+		"hints": ["Glass with a stem", "Flavored Rim", "Submerged Fruit"]
 	},
 	{
 		"number": 7,
-		"hints": [
-			"Glass without a stem",
-			"Fizzy Liquid",
-			"Fruit Garnish"
-		]
+		"hints": ["Glass without a stem", "Fizzy Liquid", "Fruit Garnish"]
 	},
 	{
 		"number": 8,
-		"hints": [
-			"Glass with a stem",
-			"Decorative Garnish",
-			"Submerged Fruit"
-		]
+		"hints": ["Glass with a stem", "Decorative Garnish", "Submerged Fruit"]
+	}
+]
+
+@onready var target_hints = [
+	{
+		"number": 1,
+		"hints": ["Target 1", "Target 2", "Target 3"]
+	},
+	{
+		"number": 2,
+		"hints": ["Target 1", "Target 2", "Target 3"]
+	},
+	{
+		"number": 3,
+		"hints": ["Target 1", "Target 2", "Target 3"]
 	}
 ]
 
