@@ -1,13 +1,13 @@
 [gd_scene format=3 uid="uid://byt1f14cqr2s8"]
 
 [ext_resource type="Script" uid="uid://dg6uhlxbwiifg" path="res://scripts/gameplay/camera_2d.gd" id="1_yqjtg"]
-[ext_resource type="Texture2D" uid="uid://dy8vnfmjvlhd" path="res://assets/Npc-1.png" id="2_bt5mj"]
+[ext_resource type="Texture2D" uid="uid://dy8vnfmjvlhd" path="res://assets/target_1.png" id="2_bt5mj"]
 [ext_resource type="Texture2D" uid="uid://cj56xowdgwxdk" path="res://assets/Table.png" id="3_37s47"]
-[ext_resource type="Texture2D" uid="uid://bvlu3kk5ab1vw" path="res://assets/Npc-2.png" id="3_e1j6l"]
+[ext_resource type="Texture2D" uid="uid://bvlu3kk5ab1vw" path="res://assets/target_2.png" id="3_e1j6l"]
 [ext_resource type="Texture2D" uid="uid://chdlhphi2bxg" path="res://assets/drinks/SpriteSheet.png" id="3_ir15t"]
 [ext_resource type="Script" uid="uid://spfhfr2vo27j" path="res://scripts/menus/confirmation_menu.gd" id="3_lnu2h"]
 [ext_resource type="Script" uid="uid://btea14wxvfbs2" path="res://scripts/gameplay/lazy_susan.gd" id="4_iywne"]
-[ext_resource type="Texture2D" uid="uid://q5p862fv7fa5" path="res://assets/Npc-3.png" id="4_pl11u"]
+[ext_resource type="Texture2D" uid="uid://q5p862fv7fa5" path="res://assets/target_3.png" id="4_pl11u"]
 [ext_resource type="Script" uid="uid://ufjs54iamur6" path="res://scripts/menus/drink_menu.gd" id="5_iywne"]
 [ext_resource type="Texture2D" uid="uid://2hw2fbuujkg1" path="res://assets/drinks/drink_1.png" id="6_ir15t"]
 [ext_resource type="Script" uid="uid://pbot1780v53o" path="res://scripts/menus/target_menu.gd" id="6_p57ef"]
@@ -115,7 +115,7 @@ position_smoothing_speed = 1.0
 script = ExtResource("1_yqjtg")
 
 [node name="Npc1" type="Sprite2D" parent="." unique_id=931792463]
-position = Vector2(-355, -46)
+position = Vector2(-356, -65)
 texture = ExtResource("2_bt5mj")
 
 [node name="Npc2" type="Sprite2D" parent="." unique_id=1558193282]
@@ -123,7 +123,7 @@ position = Vector2(-1, -78)
 texture = ExtResource("3_e1j6l")
 
 [node name="Npc3" type="Sprite2D" parent="." unique_id=531989089]
-position = Vector2(356, -51)
+position = Vector2(357, -71)
 texture = ExtResource("4_pl11u")
 
 [node name="Table" type="Sprite2D" parent="." unique_id=983845003]
@@ -321,22 +321,23 @@ horizontal_alignment = 1
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Target Menu/Control/PanelContainer/VBoxContainer" unique_id=851086978]
 layout_mode = 2
+size_flags_horizontal = 4
 alignment = 1
 
-[node name="1" type="Button" parent="Target Menu/Control/PanelContainer/VBoxContainer/HBoxContainer" unique_id=440227103]
-custom_minimum_size = Vector2(225, 425)
+[node name="target_1" type="TextureButton" parent="Target Menu/Control/PanelContainer/VBoxContainer/HBoxContainer" unique_id=2030557215]
 layout_mode = 2
-text = "1"
+size_flags_horizontal = 4
+texture_normal = ExtResource("2_bt5mj")
 
-[node name="2" type="Button" parent="Target Menu/Control/PanelContainer/VBoxContainer/HBoxContainer" unique_id=538014002]
-custom_minimum_size = Vector2(225, 210)
+[node name="target_2" type="TextureButton" parent="Target Menu/Control/PanelContainer/VBoxContainer/HBoxContainer" unique_id=1673792942]
 layout_mode = 2
-text = "2"
+size_flags_horizontal = 4
+texture_normal = ExtResource("3_e1j6l")
 
-[node name="3" type="Button" parent="Target Menu/Control/PanelContainer/VBoxContainer/HBoxContainer" unique_id=1330726386]
-custom_minimum_size = Vector2(225, 210)
+[node name="target_3" type="TextureButton" parent="Target Menu/Control/PanelContainer/VBoxContainer/HBoxContainer" unique_id=988384048]
 layout_mode = 2
-text = "3"
+size_flags_horizontal = 4
+texture_normal = ExtResource("4_pl11u")
 
 [node name="Final Menu" type="CanvasLayer" parent="." unique_id=856374487]
 
@@ -438,3 +439,5 @@ metadata/_edit_use_anchors_ = true
 wait_time = 120.0
 one_shot = true
 autostart = true
+
+[connection signal="pressed" from="Target Menu/Control/PanelContainer/VBoxContainer/HBoxContainer/target_1" to="Target Menu/Control" method="_on_npc_1_pressed"]
