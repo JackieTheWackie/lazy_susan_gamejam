@@ -4,6 +4,11 @@ extends Node
 @onready var label: Label = $Label
 @onready var drink_menu: Control = $"../Drink Menu/Control"
 @onready var phone_call: TextEdit = $"../Phone Call/Phone Call"
+@onready var waiter: TextEdit = $"../Waiter/Arm/Waiter"
+
+#animations
+@onready var slide: AnimationPlayer = $"../Waiter/Arm/Slide"
+
 @onready var phone_sprite: AnimatedSprite2D = $"../Phone Call/Phone Sprite"
 @onready var phone_buzz: AudioStreamPlayer2D = $"../Phone Call/Phone Buzz"
 @onready var waiter: TextEdit = $"../Waiter/Waiter"
@@ -61,17 +66,19 @@ func _time_left():
 		if not has_incremented:
 			# Show the hint (alternating between phone and waiter)
 			if phone_hint:
-				phone_call.text = drink_hints[current_drink_hint]
-				current_drink_hint += 1
+				phone_call.text = target_hints[current_target_hint]
+				current_target_hint += 1
 				has_incremented = true
 				phone_call.show()
 				phone_sprite.frame = 1
 				phone_buzz.play()
 			else:
-				waiter.text = target_hints[current_target_hint]
-				current_target_hint += 1
+				waiter.text = drink_hints[current_drink_hint]
+				current_drink_hint += 1
 				has_incremented = true
 				waiter.show()
+				slide.play("slide in")
+				
 				waiter_ahem.play()
 	# After a certain amount of time, hide currently showing hint
 	elif hint_timing - hint_length == floori(time_left):
