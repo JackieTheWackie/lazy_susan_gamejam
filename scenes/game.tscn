@@ -241,14 +241,10 @@ animations = [{
 [sub_resource type="LabelSettings" id="LabelSettings_lbhrr"]
 font_size = 32
 
-[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_qouja"]
-size = Vector2(200, 400)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nepv3"]
+bg_color = Color(0.18260717, 0.18260717, 0.18260717, 1)
 
-[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_wljb1"]
-size = Vector2(200, 400)
-
-[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_v2yb1"]
-size = Vector2(200, 400)
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7025r"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_5newe"]
 animations = [{
@@ -401,28 +397,28 @@ custom_minimum_size = Vector2(175, 220)
 layout_mode = 2
 texture_normal = ExtResource("6_ir15t")
 ignore_texture_size = true
-stretch_mode = 5
+stretch_mode = 6
 
 [node name="2" type="TextureButton" parent="Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContainer" unique_id=1234894407]
 custom_minimum_size = Vector2(175, 220)
 layout_mode = 2
 texture_normal = ExtResource("7_ca42v")
 ignore_texture_size = true
-stretch_mode = 4
+stretch_mode = 6
 
 [node name="3" type="TextureButton" parent="Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContainer" unique_id=1869311525]
 custom_minimum_size = Vector2(175, 220)
 layout_mode = 2
 texture_normal = ExtResource("8_rysoc")
 ignore_texture_size = true
-stretch_mode = 4
+stretch_mode = 6
 
 [node name="4" type="TextureButton" parent="Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContainer" unique_id=860856202]
 custom_minimum_size = Vector2(175, 220)
 layout_mode = 2
 texture_normal = ExtResource("9_ssvqc")
 ignore_texture_size = true
-stretch_mode = 4
+stretch_mode = 6
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="Drink Menu/Control/PanelContainer/VBoxContainer" unique_id=2126907456]
 layout_mode = 2
@@ -433,62 +429,68 @@ custom_minimum_size = Vector2(175, 220)
 layout_mode = 2
 texture_normal = ExtResource("10_264po")
 ignore_texture_size = true
-stretch_mode = 5
+stretch_mode = 6
 
 [node name="6" type="TextureButton" parent="Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContainer2" unique_id=1194769638]
 custom_minimum_size = Vector2(175, 220)
 layout_mode = 2
 texture_normal = ExtResource("11_1kice")
 ignore_texture_size = true
-stretch_mode = 4
+stretch_mode = 6
 
 [node name="7" type="TextureButton" parent="Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContainer2" unique_id=75432379]
 custom_minimum_size = Vector2(175, 220)
 layout_mode = 2
 texture_normal = ExtResource("12_5newe")
 ignore_texture_size = true
-stretch_mode = 4
+stretch_mode = 6
 
 [node name="8" type="TextureButton" parent="Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContainer2" unique_id=1842970401]
 custom_minimum_size = Vector2(175, 220)
 layout_mode = 2
 texture_normal = ExtResource("13_37s47")
 ignore_texture_size = true
-stretch_mode = 4
+stretch_mode = 6
 
 [node name="Target Menu" type="CanvasLayer" parent="." unique_id=1541135499]
+visible = false
 
 [node name="Control" type="Control" parent="Target Menu" unique_id=1878676991]
-clip_contents = true
+custom_minimum_size = Vector2(700, 400)
 layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 250.0
-offset_top = 74.0
-offset_right = -216.0
-offset_bottom = 47.0
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -350.0
+offset_top = -200.0
+offset_right = 350.0
+offset_bottom = 200.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 script = ExtResource("6_p57ef")
 
-[node name="ColorRect" type="ColorRect" parent="Target Menu/Control" unique_id=577320622]
-layout_mode = 0
-offset_right = 686.0
-offset_bottom = 499.0
-color = Color(0.37712613, 0.38772944, 0.3922603, 1)
-
 [node name="PanelContainer" type="PanelContainer" parent="Target Menu/Control" unique_id=477248572]
-layout_mode = 0
-offset_right = 686.0
-offset_bottom = 502.0
+clip_contents = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -402.5
+offset_top = -285.75
+offset_right = 402.5
+offset_bottom = 285.75
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_nepv3")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Target Menu/Control/PanelContainer" unique_id=588588335]
 layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
 
 [node name="Title" type="Label" parent="Target Menu/Control/PanelContainer/VBoxContainer" unique_id=1151234688]
 layout_mode = 2
@@ -498,28 +500,40 @@ horizontal_alignment = 1
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Target Menu/Control/PanelContainer/VBoxContainer" unique_id=851086978]
 layout_mode = 2
-size_flags_horizontal = 4
+size_flags_vertical = 3
 alignment = 1
 
 [node name="target_1" type="TextureButton" parent="Target Menu/Control/PanelContainer/VBoxContainer/HBoxContainer" unique_id=2030557215]
 custom_minimum_size = Vector2(200, 400)
 layout_mode = 2
-size_flags_horizontal = 4
-texture_normal = SubResource("PlaceholderTexture2D_qouja")
+texture_normal = ExtResource("4_m4url")
+texture_hover = ExtResource("6_pr1ej")
+ignore_texture_size = true
+stretch_mode = 6
 
 [node name="target_2" type="TextureButton" parent="Target Menu/Control/PanelContainer/VBoxContainer/HBoxContainer" unique_id=1673792942]
 custom_minimum_size = Vector2(200, 400)
 layout_mode = 2
-size_flags_horizontal = 4
-texture_normal = SubResource("PlaceholderTexture2D_wljb1")
+texture_normal = ExtResource("9_oaba0")
+texture_hover = ExtResource("8_0sl42")
+ignore_texture_size = true
+stretch_mode = 6
 
 [node name="target_3" type="TextureButton" parent="Target Menu/Control/PanelContainer/VBoxContainer/HBoxContainer" unique_id=988384048]
 custom_minimum_size = Vector2(200, 400)
 layout_mode = 2
-size_flags_horizontal = 4
-texture_normal = SubResource("PlaceholderTexture2D_v2yb1")
+texture_normal = ExtResource("14_rm0al")
+texture_hover = ExtResource("12_fedci")
+ignore_texture_size = true
+stretch_mode = 6
+
+[node name="Panel" type="Panel" parent="Target Menu/Control/PanelContainer/VBoxContainer" unique_id=1558228059]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_7025r")
 
 [node name="Final Menu" type="CanvasLayer" parent="." unique_id=856374487]
+visible = false
 
 [node name="Control" type="Control" parent="Final Menu" unique_id=660241745]
 layout_mode = 3
@@ -573,6 +587,7 @@ layout_mode = 2
 text = "NO!"
 
 [node name="Game Result" type="CanvasLayer" parent="." unique_id=155840623]
+visible = false
 
 [node name="Control" type="Control" parent="Game Result" unique_id=377092502]
 layout_mode = 3
