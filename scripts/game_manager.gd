@@ -16,7 +16,7 @@ var drink_list = [$"Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContaine
 	},
 	{
 		"number": 2,
-		"hints": ["Glass with a stem", "Swirly Liquid", "Third Thing"]
+		"hints": ["Glass with a stem", "Swirly Liquid", "No Garnish"]
 	},
 	{
 		"number": 3,

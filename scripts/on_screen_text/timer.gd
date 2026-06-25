@@ -4,7 +4,10 @@ extends Node
 @onready var label: Label = $Label
 @onready var drink_menu: Control = $"../Drink Menu/Control"
 @onready var phone_call: TextEdit = $"../Phone Call/Phone Call"
+@onready var phone_sprite: AnimatedSprite2D = $"../Phone Call/Phone Sprite"
+@onready var phone_buzz: AudioStreamPlayer2D = $"../Phone Call/Phone Buzz"
 @onready var waiter: TextEdit = $"../Waiter/Waiter"
+@onready var waiter_ahem: AudioStreamPlayer2D = $"../Waiter/Waiter Ahem"
 @onready var hint_timing: int
 @onready var phone_hint: bool = true
 @onready var rng = RandomNumberGenerator.new()
@@ -46,6 +49,7 @@ func _process(delta: float) -> void:
 		timer.stop()
 		label.hide()
 		phone_call.hide()
+		phone_sprite.frame = 0
 		waiter.hide()
 
 
@@ -61,15 +65,19 @@ func _time_left():
 				current_drink_hint += 1
 				has_incremented = true
 				phone_call.show()
+				phone_sprite.frame = 1
+				phone_buzz.play()
 			else:
 				waiter.text = target_hints[current_target_hint]
 				current_target_hint += 1
 				has_incremented = true
 				waiter.show()
+				waiter_ahem.play()
 	# After a certain amount of time, hide currently showing hint
 	elif hint_timing - hint_length == floori(time_left):
 		if phone_hint:
 			phone_call.hide()
+			phone_sprite.frame = 0
 		else:
 			waiter.hide()
 		

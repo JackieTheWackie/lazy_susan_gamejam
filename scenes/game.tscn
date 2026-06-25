@@ -38,6 +38,10 @@
 [ext_resource type="Texture2D" uid="uid://b5016hyhj36xv" path="res://assets/Phone-on.png" id="19_37s47"]
 [ext_resource type="Texture2D" uid="uid://bro2kdkr48dmf" path="res://assets/Arm.png" id="23_e1j6l"]
 [ext_resource type="FontFile" uid="uid://cif71sfcwaqe4" path="res://assets/fonts/Marker SD.ttf" id="24_pl11u"]
+[ext_resource type="AudioStream" uid="uid://dn56p51s38a5i" path="res://assets/sounds/phone_buzz.wav" id="27_wljb1"]
+[ext_resource type="AudioStream" uid="uid://cs04vjreqeb4k" path="res://assets/sounds/background-music.mp3" id="30_sgl2t"]
+[ext_resource type="AudioStream" uid="uid://dvllbeu62dlcw" path="res://assets/sounds/waiter_ahem.wav" id="30_v2yb1"]
+[ext_resource type="AudioStream" uid="uid://bjvu1xxf4igni" path="res://assets/sounds/background-noise.wav" id="31_qouja"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_o8ni1"]
 animations = [{
@@ -637,6 +641,10 @@ text = "This is a text message
 from a very serious person"
 script = ExtResource("12_kvuet")
 
+[node name="Phone Buzz" type="AudioStreamPlayer2D" parent="Phone Call" unique_id=2059865373]
+stream = ExtResource("27_wljb1")
+volume_db = 2.916
+
 [node name="Waiter" type="Node" parent="." unique_id=120914305]
 
 [node name="Arm" type="Sprite2D" parent="Waiter" unique_id=770000876]
@@ -662,6 +670,9 @@ wrap_mode = 1
 script = ExtResource("12_kvuet")
 metadata/_edit_use_anchors_ = true
 
+[node name="Waiter Ahem" type="AudioStreamPlayer2D" parent="Waiter" unique_id=1476175712]
+stream = ExtResource("30_v2yb1")
+
 [node name="Timer" type="Node" parent="." unique_id=902966783]
 script = ExtResource("11_dinhu")
 
@@ -676,5 +687,15 @@ metadata/_edit_use_anchors_ = true
 wait_time = 120.0
 one_shot = true
 autostart = true
+
+[node name="Node" type="Node" parent="." unique_id=1843692372]
+
+[node name="Background Music" type="AudioStreamPlayer2D" parent="Node" unique_id=1425360798]
+stream = ExtResource("30_sgl2t")
+autoplay = true
+
+[node name="Background Noise" type="AudioStreamPlayer2D" parent="Node" unique_id=1355647677]
+stream = ExtResource("31_qouja")
+autoplay = true
 
 [connection signal="pressed" from="Target Menu/Control/PanelContainer/VBoxContainer/HBoxContainer/target_1" to="Target Menu/Control" method="_on_npc_1_pressed"]
