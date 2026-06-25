@@ -22,6 +22,7 @@ func _input(event: InputEvent) -> void:
 func _on_yes_pressed() -> void:
 	hide()
 	drink_menu.show()
+	GameManager.decision_time = true
 
 func _on_no_pressed() -> void:
 	hide()
