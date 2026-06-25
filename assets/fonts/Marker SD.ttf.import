@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://cif71sfcwaqe4"
-path="res://.godot/imported/Marker SD.ttf-be18341926a70000019e13f5f6c187d8.fontdata"
+path="res://.godot/imported/Marker SD.ttf-fe56db74692d112d53f92a79fd47226f.fontdata"
 
 [deps]
 
-source_file="res://assets/Marker SD.ttf"
-dest_files=["res://.godot/imported/Marker SD.ttf-be18341926a70000019e13f5f6c187d8.fontdata"]
+source_file="res://assets/fonts/Marker SD.ttf"
+dest_files=["res://.godot/imported/Marker SD.ttf-fe56db74692d112d53f92a79fd47226f.fontdata"]
 
 [params]
 
