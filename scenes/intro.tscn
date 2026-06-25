@@ -1,0 +1,332 @@
+[gd_scene format=3 uid="uid://6j8pxjywyjyy"]
+
+[ext_resource type="Texture2D" uid="uid://dahydm7dvrye5" path="res://assets/VerySerious-SpyBoss.png" id="1_ioskq"]
+[ext_resource type="Script" uid="uid://s5l8412ogtv5" path="res://scripts/intro.gd" id="2_4bx60"]
+[ext_resource type="Texture2D" uid="uid://ti27374mcvl3" path="res://assets/Bubble.png" id="3_i2l1n"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wfs7u"]
+texture = ExtResource("3_i2l1n")
+
+[node name="Intro" type="Node2D" unique_id=2142030996]
+
+[node name="VerySeriousSpyBoss" type="Sprite2D" parent="." unique_id=471076811]
+position = Vector2(578.3333, 324.5)
+scale = Vector2(0.5972222, 0.5972222)
+texture = ExtResource("1_ioskq")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1196495876]
+script = ExtResource("2_4bx60")
+
+[node name="Start" type="Button" parent="CanvasLayer" unique_id=1994157025]
+offset_left = 944.0
+offset_top = 563.0
+offset_right = 1131.0
+offset_bottom = 627.0
+theme_override_font_sizes/font_size = 20
+text = "Start Game >"
+
+[node name="Intro1" type="Control" parent="CanvasLayer" unique_id=30687985]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="NewJob" type="PanelContainer" parent="CanvasLayer/Intro1" unique_id=987660779]
+custom_minimum_size = Vector2(620, 240)
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 9.0
+offset_top = 217.0
+offset_right = 629.0
+offset_bottom = 457.0
+grow_vertical = 2
+scale = Vector2(0.8, 0.8)
+theme_override_styles/panel = SubResource("StyleBoxTexture_wfs7u")
+
+[node name="Label" type="Label" parent="CanvasLayer/Intro1/NewJob" unique_id=160816764]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "I have a new job for you..."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AgentSusan" type="PanelContainer" parent="CanvasLayer/Intro1" unique_id=740988319]
+custom_minimum_size = Vector2(620, 240)
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 662.0
+offset_top = 366.0
+offset_right = 1282.0
+offset_bottom = 606.0
+grow_vertical = 2
+scale = Vector2(0.8, 0.8)
+theme_override_styles/panel = SubResource("StyleBoxTexture_wfs7u")
+
+[node name="Label" type="Label" parent="CanvasLayer/Intro1/AgentSusan" unique_id=920622417]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "Agent Susan"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Intro2" type="Control" parent="CanvasLayer" unique_id=493356628]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Party" type="PanelContainer" parent="CanvasLayer/Intro2" unique_id=888271770]
+custom_minimum_size = Vector2(620, 240)
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 36.000023
+offset_top = -18.0
+offset_right = 656.0
+offset_bottom = 222.0
+grow_vertical = 2
+scale = Vector2(0.8, 0.8)
+theme_override_styles/panel = SubResource("StyleBoxTexture_wfs7u")
+
+[node name="Label" type="Label" parent="CanvasLayer/Intro2/Party" unique_id=1675660728]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "You are going to a 
+masquerade event."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Target" type="PanelContainer" parent="CanvasLayer/Intro2" unique_id=1240974700]
+custom_minimum_size = Vector2(620, 240)
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 78.0
+offset_top = 289.0
+offset_right = 698.0
+offset_bottom = 529.0
+grow_vertical = 2
+scale = Vector2(0.8, 0.8)
+theme_override_styles/panel = SubResource("StyleBoxTexture_wfs7u")
+
+[node name="Label" type="Label" parent="CanvasLayer/Intro2/Target" unique_id=564061369]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "Your target will be
+one of the guests."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Drink" type="PanelContainer" parent="CanvasLayer/Intro2" unique_id=180074192]
+custom_minimum_size = Vector2(620, 240)
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 637.0
+offset_top = 337.0
+offset_right = 1257.0
+offset_bottom = 577.0
+grow_vertical = 2
+scale = Vector2(0.8, 0.8)
+theme_override_styles/panel = SubResource("StyleBoxTexture_wfs7u")
+
+[node name="Label" type="Label" parent="CanvasLayer/Intro2/Drink" unique_id=106766341]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "One of the drinks will be
+poisoned."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Intro3" type="Control" parent="CanvasLayer" unique_id=390118334]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Goal" type="PanelContainer" parent="CanvasLayer/Intro3" unique_id=1002463512]
+custom_minimum_size = Vector2(620, 240)
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 6.0
+offset_top = 220.0
+offset_right = 656.0
+offset_bottom = 460.0
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_wfs7u")
+
+[node name="Label" type="Label" parent="CanvasLayer/Intro3/Goal" unique_id=1975998887]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "You must figure out which guest
+ is the target based on my description."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Goal2" type="PanelContainer" parent="CanvasLayer/Intro3" unique_id=1242399568]
+custom_minimum_size = Vector2(620, 240)
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 501.0
+offset_top = 337.0
+offset_right = 1151.0
+offset_bottom = 577.0
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_wfs7u")
+
+[node name="Label" type="Label" parent="CanvasLayer/Intro3/Goal2" unique_id=1786066056]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "Then, when its time to order - 
+choose the poisoned drink."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Intro4" type="Control" parent="CanvasLayer" unique_id=1994932956]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Kitchen" type="PanelContainer" parent="CanvasLayer/Intro4" unique_id=1552539820]
+custom_minimum_size = Vector2(620, 240)
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 12.000061
+offset_top = -0.9999695
+offset_right = 632.00006
+offset_bottom = 239.00003
+grow_vertical = 2
+scale = Vector2(0.8, 0.8)
+theme_override_styles/panel = SubResource("StyleBoxTexture_wfs7u")
+
+[node name="Label" type="Label" parent="CanvasLayer/Intro4/Kitchen" unique_id=516599288]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "An agent in the kitchen 
+will poison the drink."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Waiter" type="PanelContainer" parent="CanvasLayer/Intro4" unique_id=903938584]
+custom_minimum_size = Vector2(620, 240)
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 644.0
+offset_top = 416.0
+offset_right = 1264.0
+offset_bottom = 656.0
+grow_vertical = 2
+scale = Vector2(0.8, 0.8)
+theme_override_styles/panel = SubResource("StyleBoxTexture_wfs7u")
+
+[node name="Label" type="Label" parent="CanvasLayer/Intro4/Waiter" unique_id=2143955693]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "The waiter will be able
+to bring you messages."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Intro5" type="Control" parent="CanvasLayer" unique_id=185265305]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Serious" type="PanelContainer" parent="CanvasLayer/Intro5" unique_id=1905022332]
+custom_minimum_size = Vector2(620, 240)
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 15.999999
+offset_top = 32.999996
+offset_right = 636.0
+offset_bottom = 273.0
+grow_vertical = 2
+scale = Vector2(0.8, 0.8)
+theme_override_styles/panel = SubResource("StyleBoxTexture_wfs7u")
+
+[node name="Label" type="Label" parent="CanvasLayer/Intro5/Serious" unique_id=1098904432]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "This is a very dangerous job -"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Serious2" type="PanelContainer" parent="CanvasLayer/Intro5" unique_id=1724669596]
+custom_minimum_size = Vector2(620, 240)
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 648.0
+offset_top = 193.0
+offset_right = 1268.0
+offset_bottom = 433.0
+grow_vertical = 2
+scale = Vector2(0.8, 0.8)
+theme_override_styles/panel = SubResource("StyleBoxTexture_wfs7u")
+
+[node name="Label" type="Label" parent="CanvasLayer/Intro5/Serious2" unique_id=423716945]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "so you must take 
+this seriously!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GoodLuck" type="PanelContainer" parent="CanvasLayer/Intro5" unique_id=624949405]
+custom_minimum_size = Vector2(620, 240)
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 328.99997
+offset_top = 423.99997
+offset_right = 949.0
+offset_bottom = 664.0
+grow_vertical = 2
+scale = Vector2(0.8, 0.8)
+theme_override_styles/panel = SubResource("StyleBoxTexture_wfs7u")
+
+[node name="Label" type="Label" parent="CanvasLayer/Intro5/GoodLuck" unique_id=2077373391]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "Good luck, agent."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="CanvasLayer/Start" to="CanvasLayer" method="_on_start_pressed"]
