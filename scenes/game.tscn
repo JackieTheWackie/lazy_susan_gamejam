@@ -264,6 +264,43 @@ animations = [{
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bhx41"]
 
+[sub_resource type="Animation" id="Animation_nepv3"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Waiter/Arm:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1087, 87)]
+}
+
+[sub_resource type="Animation" id="Animation_7025r"]
+resource_name = "slide in"
+length = 7.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Waiter/Arm:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3, 3.9333334, 7),
+"transitions": PackedFloat32Array(1, 2, 2, 1),
+"update": 0,
+"values": [Vector2(1087, 87), Vector2(145, 87), Vector2(145.00006, 87), Vector2(1087, 87)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_m4url"]
+_data = {
+&"RESET": SubResource("Animation_nepv3"),
+&"slide in": SubResource("Animation_7025r")
+}
+
 [node name="Game" type="Node2D" unique_id=1428437104]
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=523152189]
@@ -644,32 +681,39 @@ position = Vector2(1087, 87)
 scale = Vector2(0.72359735, 0.72359735)
 texture = ExtResource("23_e1j6l")
 
-[node name="Waiter" type="TextEdit" parent="Waiter" unique_id=454062786]
+[node name="Waiter" type="TextEdit" parent="Waiter/Arm" unique_id=454062786]
 anchors_preset = -1
-anchor_left = -0.088541664
-anchor_right = -0.088541664
-anchor_bottom = 0.083333336
-offset_left = 141.0
-offset_top = 32.0
-offset_right = 433.0
-offset_bottom = 116.0
+anchor_left = 0.591
+anchor_top = 0.47000003
+anchor_right = 0.591
+anchor_bottom = 0.47000003
+offset_left = -848.5208
+offset_top = -347.00928
+offset_right = -556.5208
+offset_bottom = -263.00928
+grow_horizontal = 2
+grow_vertical = 2
 theme_override_colors/font_color = Color(0.17262545, 0.30681378, 0.41002965, 1)
 theme_override_fonts/font = ExtResource("24_pl11u")
 theme_override_font_sizes/font_size = 26
 theme_override_styles/normal = SubResource("StyleBoxEmpty_bhx41")
 text = "The guy in the kitchen forgot which drink he poisoned"
 wrap_mode = 1
+scroll_vertical = 0.2903225806451615
 script = ExtResource("12_kvuet")
-metadata/_edit_use_anchors_ = true
+
+[node name="Slide" type="AnimationPlayer" parent="Waiter/Arm" unique_id=141024032]
+root_node = NodePath("../../../Phone Call")
+libraries/ = SubResource("AnimationLibrary_m4url")
 
 [node name="Timer" type="Node" parent="." unique_id=902966783]
 script = ExtResource("11_dinhu")
 
 [node name="Label" type="Label" parent="Timer" unique_id=444015267]
-offset_left = 413.0
-offset_top = -308.0
-offset_right = 538.0
-offset_bottom = -249.0
+offset_left = 446.0
+offset_top = -320.0
+offset_right = 571.0
+offset_bottom = -261.0
 metadata/_edit_use_anchors_ = true
 
 [node name="Timer" type="Timer" parent="Timer" unique_id=2095725279]
