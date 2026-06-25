@@ -5,13 +5,9 @@ extends Node
 @onready var drink_menu: Control = $"../Drink Menu/Control"
 @onready var phone_call: TextEdit = $"../Phone Call/Phone Call"
 @onready var waiter: TextEdit = $"../Waiter/Arm/Waiter"
-
-#animations
 @onready var slide: AnimationPlayer = $"../Waiter/Arm/Slide"
-
 @onready var phone_sprite: AnimatedSprite2D = $"../Phone Call/Phone Sprite"
 @onready var phone_buzz: AudioStreamPlayer2D = $"../Phone Call/Phone Buzz"
-@onready var waiter: TextEdit = $"../Waiter/Waiter"
 @onready var waiter_ahem: AudioStreamPlayer2D = $"../Waiter/Waiter Ahem"
 @onready var hint_timing: int
 @onready var phone_hint: bool = true
