@@ -1,16 +1,16 @@
 [gd_scene format=3 uid="uid://byt1f14cqr2s8"]
 
 [ext_resource type="Script" uid="uid://dg6uhlxbwiifg" path="res://scripts/gameplay/camera_2d.gd" id="1_yqjtg"]
-[ext_resource type="Texture2D" uid="uid://dy8vnfmjvlhd" path="res://assets/targets/target_1.png" id="2_bt5mj"]
-[ext_resource type="Texture2D" uid="uid://dgrojh2j0gvuj" path="res://assets/targets/Target a-1.png" id="2_sww3w"]
+[ext_resource type="Texture2D" uid="uid://dy8vnfmjvlhd" path="res://assets/Targets/target_1.png" id="2_bt5mj"]
+[ext_resource type="Texture2D" uid="uid://dgrojh2j0gvuj" path="res://assets/Targets/Target a-1.png" id="2_sww3w"]
 [ext_resource type="Texture2D" uid="uid://cj56xowdgwxdk" path="res://assets/Table.png" id="3_37s47"]
-[ext_resource type="Texture2D" uid="uid://bvlu3kk5ab1vw" path="res://assets/targets/target_2.png" id="3_e1j6l"]
+[ext_resource type="Texture2D" uid="uid://bvlu3kk5ab1vw" path="res://assets/Targets/target_2.png" id="3_e1j6l"]
 [ext_resource type="Texture2D" uid="uid://chdlhphi2bxg" path="res://assets/drinks/SpriteSheet.png" id="3_ir15t"]
 [ext_resource type="Script" uid="uid://spfhfr2vo27j" path="res://scripts/menus/confirmation_menu.gd" id="3_lnu2h"]
-[ext_resource type="Texture2D" uid="uid://d27du6sh1e8el" path="res://assets/targets/Target a-2.png" id="3_suyxu"]
+[ext_resource type="Texture2D" uid="uid://d27du6sh1e8el" path="res://assets/Targets/Target a-2.png" id="3_suyxu"]
 [ext_resource type="Script" uid="uid://btea14wxvfbs2" path="res://scripts/gameplay/lazy_susan.gd" id="4_iywne"]
-[ext_resource type="Texture2D" uid="uid://q5p862fv7fa5" path="res://assets/targets/target_3.png" id="4_pl11u"]
-[ext_resource type="Texture2D" uid="uid://bq86q1c3c3xst" path="res://assets/targets/Target a-3.png" id="4_sgl2t"]
+[ext_resource type="Texture2D" uid="uid://q5p862fv7fa5" path="res://assets/Targets/target_3.png" id="4_pl11u"]
+[ext_resource type="Texture2D" uid="uid://bq86q1c3c3xst" path="res://assets/Targets/Target a-3.png" id="4_sgl2t"]
 [ext_resource type="Script" uid="uid://ufjs54iamur6" path="res://scripts/menus/drink_menu.gd" id="5_iywne"]
 [ext_resource type="Texture2D" uid="uid://2hw2fbuujkg1" path="res://assets/drinks/drink_1.png" id="6_ir15t"]
 [ext_resource type="Script" uid="uid://pbot1780v53o" path="res://scripts/menus/target_menu.gd" id="6_p57ef"]
@@ -24,6 +24,7 @@
 [ext_resource type="Texture2D" uid="uid://dr1i322246nmr" path="res://assets/drinks/Drink_7.png" id="12_5newe"]
 [ext_resource type="Script" uid="uid://deaai2bhdeei8" path="res://scripts/on_screen_text/phone_call.gd" id="12_kvuet"]
 [ext_resource type="Texture2D" uid="uid://b4yq0i8k8wf1r" path="res://assets/drinks/Drink_8.png" id="13_37s47"]
+[ext_resource type="Script" uid="uid://cc3usxlxrwnkx" path="res://scripts/menus/game_result.gd" id="16_ssvqc"]
 [ext_resource type="Texture2D" uid="uid://b0tetluulxpbi" path="res://assets/Phone-off.png" id="18_5newe"]
 [ext_resource type="Texture2D" uid="uid://b5016hyhj36xv" path="res://assets/Phone-on.png" id="19_37s47"]
 [ext_resource type="Texture2D" uid="uid://bro2kdkr48dmf" path="res://assets/Arm.png" id="23_e1j6l"]
@@ -182,7 +183,6 @@ sprite_frames = SubResource("SpriteFrames_qouja")
 position = Vector2(-2.5, -17.5)
 
 [node name="Confirmation Menu" type="CanvasLayer" parent="." unique_id=836725415]
-visible = false
 
 [node name="Control" type="Control" parent="Confirmation Menu" unique_id=1373373198]
 layout_mode = 3
@@ -226,7 +226,6 @@ layout_mode = 2
 text = "NO!"
 
 [node name="Drink Menu" type="CanvasLayer" parent="." unique_id=1393146838]
-visible = false
 
 [node name="Control" type="Control" parent="Drink Menu" unique_id=1211320975]
 layout_mode = 3
@@ -389,7 +388,6 @@ size_flags_horizontal = 4
 texture_normal = SubResource("PlaceholderTexture2D_v2yb1")
 
 [node name="Final Menu" type="CanvasLayer" parent="." unique_id=856374487]
-visible = false
 
 [node name="Control" type="Control" parent="Final Menu" unique_id=660241745]
 layout_mode = 3
