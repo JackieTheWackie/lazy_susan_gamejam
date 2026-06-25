@@ -1,9 +1,8 @@
 extends Control
 
-@onready var target_1: TextureButton = $PanelContainer/VBoxContainer/HBoxContainer/target_1
-@onready var target_2: TextureButton = $PanelContainer/VBoxContainer/HBoxContainer/target_2
-@onready var target_3: TextureButton = $PanelContainer/VBoxContainer/HBoxContainer/target_3
-
+@onready var target_1: Button = $"PanelContainer/VBoxContainer/HBoxContainer/1"
+@onready var target_2: Button = $"PanelContainer/VBoxContainer/HBoxContainer/2"
+@onready var target_3: Button = $"PanelContainer/VBoxContainer/HBoxContainer/3"
 @onready var final_menu: Control = $"../../Final Menu/Control"
 
 func _ready() -> void:

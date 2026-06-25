@@ -4,7 +4,6 @@ extends Node
 @onready var label: Label = $Label
 @onready var drink_menu: Control = $"../Drink Menu/Control"
 @onready var phone_call: TextEdit = $"../Phone Call/Phone Call"
-@onready var phone_sprite: AnimatedSprite2D = $"../Phone Call/Phone Sprite"
 @onready var waiter: TextEdit = $"../Waiter/Waiter"
 @onready var hint_timing: int
 @onready var phone_hint: bool = true
