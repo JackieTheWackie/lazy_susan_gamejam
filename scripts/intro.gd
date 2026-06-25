@@ -8,7 +8,6 @@ extends CanvasLayer
 
 @onready var start: Button = $Start
 
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	intro_1.visible = true
 	intro_2.visible = false
@@ -19,10 +18,17 @@ func _ready() -> void:
 func _on_start_pressed() -> void:
 	get_tree().change_scene_to_file("res://scenes/game.tscn")
 
-func _input(event):
+func _input(event: InputEvent) -> void:
 	if Input.is_action_just_pressed("ui_accept"):
-		intro_1.visible = false
-		intro_2.visible = true
-		intro_3.visible = false
-		intro_4.visible = false
-		intro_5.visible = false
+		if intro_1.visible == true:
+			intro_1.visible = false
+			intro_2.visible = true
+		elif intro_2.visible == true:
+			intro_2.visible = false
+			intro_3.visible = true
+		elif intro_3.visible == true:
+			intro_3.visible = false
+			intro_4.visible = true
+		elif intro_4.visible == true:
+			intro_4.visible = false
+			intro_5.visible = true

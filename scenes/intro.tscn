@@ -25,7 +25,7 @@ offset_bottom = 627.0
 theme_override_font_sizes/font_size = 20
 text = "Start Game >"
 
-[node name="Intro1" type="Control" parent="CanvasLayer" unique_id=30687985]
+[node name="Intro1" type="Control" parent="CanvasLayer" unique_id=900420632]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
@@ -76,7 +76,6 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Intro2" type="Control" parent="CanvasLayer" unique_id=493356628]
-visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
@@ -152,7 +151,6 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Intro3" type="Control" parent="CanvasLayer" unique_id=390118334]
-visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
@@ -165,9 +163,9 @@ anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
 offset_left = 6.0
-offset_top = 220.0
+offset_top = 172.0
 offset_right = 656.0
-offset_bottom = 460.0
+offset_bottom = 412.0
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_wfs7u")
 
@@ -187,9 +185,9 @@ anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
 offset_left = 501.0
-offset_top = 337.0
+offset_top = 289.0
 offset_right = 1151.0
-offset_bottom = 577.0
+offset_bottom = 529.0
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_wfs7u")
 
@@ -203,7 +201,6 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Intro4" type="Control" parent="CanvasLayer" unique_id=1994932956]
-visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
@@ -216,9 +213,9 @@ anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
 offset_left = 12.000061
-offset_top = -0.9999695
+offset_top = 165.99998
 offset_right = 632.00006
-offset_bottom = 239.00003
+offset_bottom = 406.0
 grow_vertical = 2
 scale = Vector2(0.8, 0.8)
 theme_override_styles/panel = SubResource("StyleBoxTexture_wfs7u")
@@ -239,9 +236,9 @@ anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
 offset_left = 644.0
-offset_top = 416.0
+offset_top = 331.0
 offset_right = 1264.0
-offset_bottom = 656.0
+offset_bottom = 571.0
 grow_vertical = 2
 scale = Vector2(0.8, 0.8)
 theme_override_styles/panel = SubResource("StyleBoxTexture_wfs7u")
@@ -256,7 +253,6 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Intro5" type="Control" parent="CanvasLayer" unique_id=185265305]
-visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
