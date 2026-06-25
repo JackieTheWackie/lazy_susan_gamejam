@@ -47,11 +47,11 @@ var drink_list = [$"Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContaine
 @onready var target_hints = [
 	{
 		"number": 1,
-		"hints": ["Wearing Gloves", "Has Curly Hair", "Wearing a Flower"]
+		"hints": ["Has Curly Hair", "Wearing a Ring", "Wearing a Flower"]
 	},
 	{
 		"number": 2,
-		"hints": ["Has Curly Hair", "Wearing a Ring", "Wearing a Flower"]
+		"hints": ["Wearing Gloves", "Has Curly Hair", "Wearing a Flower"]
 	},
 	{
 		"number": 3,

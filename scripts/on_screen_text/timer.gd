@@ -13,7 +13,7 @@ extends Node
 @onready var phone_hint: bool = true
 @onready var rng = RandomNumberGenerator.new()
 # How long a hint should show
-@onready var hint_length = 5
+@onready var hint_length = 10
 
 # Time period in which a hint could occur
 @onready var hint_range = 15

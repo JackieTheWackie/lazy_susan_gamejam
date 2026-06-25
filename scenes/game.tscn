@@ -676,15 +676,15 @@ horizontal_alignment = 1
 [node name="Phone Call" type="Node" parent="." unique_id=228923896]
 
 [node name="Phone Sprite" type="AnimatedSprite2D" parent="Phone Call" unique_id=1835425870]
-position = Vector2(-118, 167)
+position = Vector2(-99.99999, 153)
 scale = Vector2(0.6055069, 0.60550684)
 sprite_frames = SubResource("SpriteFrames_5newe")
 
 [node name="Phone Call" type="TextEdit" parent="Phone Call" unique_id=419674656]
-offset_left = -137.0
-offset_top = 100.0
-offset_right = 263.0
-offset_bottom = 208.0
+offset_left = -99.0
+offset_top = 108.0
+offset_right = 301.0
+offset_bottom = 216.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxEmpty_bt5mj")
@@ -705,19 +705,19 @@ texture = ExtResource("23_e1j6l")
 
 [node name="Waiter" type="TextEdit" parent="Waiter/Arm" unique_id=454062786]
 anchors_preset = -1
-anchor_left = 0.591
-anchor_top = 0.47000003
-anchor_right = 0.591
-anchor_bottom = 0.47000003
-offset_left = -776.65765
-offset_top = -329.0435
-offset_right = -619.1115
-offset_bottom = -245.04349
+anchor_left = 0.578
+anchor_top = 0.499
+anchor_right = 0.578
+anchor_bottom = 0.499
+offset_left = -839.95575
+offset_top = -388.07703
+offset_right = -529.00934
+offset_bottom = -218.093
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0.17262545, 0.30681378, 0.41002965, 1)
 theme_override_fonts/font = ExtResource("24_pl11u")
-theme_override_font_sizes/font_size = 26
+theme_override_font_sizes/font_size = 40
 theme_override_styles/normal = SubResource("StyleBoxEmpty_bhx41")
 text = "The guy in the kitchen forgot which drink he poisoned"
 wrap_mode = 1
