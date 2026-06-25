@@ -5,6 +5,8 @@ extends Node
 @onready var drink_menu: Control = $"../Drink Menu/Control"
 @onready var phone_call: TextEdit = $"../Phone Call/Phone Call"
 @onready var waiter: TextEdit = $"../Waiter/Arm/Waiter"
+
+#animations
 @onready var slide: AnimationPlayer = $"../Waiter/Arm/Slide"
 
 @onready var hint_timing: int

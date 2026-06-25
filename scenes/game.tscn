@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://byt1f14cqr2s8"]
 
 [ext_resource type="Script" uid="uid://dg6uhlxbwiifg" path="res://scripts/gameplay/camera_2d.gd" id="1_yqjtg"]
+[ext_resource type="Script" uid="uid://stwy54rrvd5t" path="res://scripts/gameplay/targets.gd" id="2_7025r"]
 [ext_resource type="Texture2D" uid="uid://dqn0cm6hbgp7l" path="res://assets/Target_Sprites/Target_1-4.png" id="2_nepv3"]
 [ext_resource type="Texture2D" uid="uid://cj56xowdgwxdk" path="res://assets/Table.png" id="3_37s47"]
 [ext_resource type="Texture2D" uid="uid://bhs0oaccc6pl5" path="res://assets/Target_Sprites/Target_1-5.png" id="3_7025r"]
@@ -308,28 +309,29 @@ position_smoothing_enabled = true
 position_smoothing_speed = 1.0
 script = ExtResource("1_yqjtg")
 
-[node name="Target 1" type="AnimatedSprite2D" parent="." unique_id=1180621875]
-position = Vector2(-397, -88)
-scale = Vector2(0.75, 0.75)
-sprite_frames = SubResource("SpriteFrames_o8ni1")
-animation = &"Laughing"
-frame = 2
-frame_progress = 0.9516754
-
-[node name="Target 2" type="AnimatedSprite2D" parent="." unique_id=405673060]
-position = Vector2(20, -70)
-scale = Vector2(0.75, 0.75)
-sprite_frames = SubResource("SpriteFrames_3hbvx")
-animation = &"Laughing"
-frame_progress = 0.41562548
-
-[node name="Target 3" type="AnimatedSprite2D" parent="." unique_id=800487302]
+[node name="Targets" type="Node2D" parent="." unique_id=1069575426]
 position = Vector2(413, -97)
 scale = Vector2(0.75, 0.75)
+script = ExtResource("2_7025r")
+
+[node name="Target 1" type="AnimatedSprite2D" parent="Targets" unique_id=1180621875]
+position = Vector2(-1080, 12.000008)
+sprite_frames = SubResource("SpriteFrames_o8ni1")
+animation = &"Talking"
+frame_progress = 0.20794192
+
+[node name="Target 2" type="AnimatedSprite2D" parent="Targets" unique_id=405673060]
+position = Vector2(-524, 36.000008)
+sprite_frames = SubResource("SpriteFrames_3hbvx")
+animation = &"Talking"
+frame = 1
+frame_progress = 0.9723803
+
+[node name="Target 3" type="AnimatedSprite2D" parent="Targets" unique_id=800487302]
 sprite_frames = SubResource("SpriteFrames_q8j3a")
-animation = &"Laughing"
-frame = 3
-frame_progress = 0.0073197205
+animation = &"Talking"
+frame = 1
+frame_progress = 0.9332032
 
 [node name="Table" type="Sprite2D" parent="." unique_id=983845003]
 position = Vector2(2, 291)
@@ -699,7 +701,6 @@ theme_override_font_sizes/font_size = 26
 theme_override_styles/normal = SubResource("StyleBoxEmpty_bhx41")
 text = "The guy in the kitchen forgot which drink he poisoned"
 wrap_mode = 1
-scroll_vertical = 0.2903225806451615
 script = ExtResource("12_kvuet")
 
 [node name="Slide" type="AnimationPlayer" parent="Waiter/Arm" unique_id=141024032]
