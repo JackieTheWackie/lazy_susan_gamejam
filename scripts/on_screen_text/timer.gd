@@ -4,6 +4,7 @@ extends Node
 @onready var label: Label = $Label
 @onready var drink_menu: Control = $"../Drink Menu/Control"
 @onready var phone_call: TextEdit = $"../Phone Call/Phone Call"
+@onready var phone_sprite: AnimatedSprite2D = $"../Phone Call/Phone Sprite"
 @onready var waiter: TextEdit = $"../Waiter/Waiter"
 @onready var hint_timing: int
 @onready var phone_hint: bool = true
@@ -35,6 +36,7 @@ func _time_left():
 		# Show the hint (alternating between phone and waiter)
 		if phone_hint:
 			phone_call.show()
+			
 		else:
 			waiter.show()
 	# After a certain amount of time, hide currently showing hint

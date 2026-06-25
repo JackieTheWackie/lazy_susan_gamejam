@@ -1,9 +1,16 @@
 [gd_scene format=3 uid="uid://byt1f14cqr2s8"]
 
 [ext_resource type="Script" uid="uid://dg6uhlxbwiifg" path="res://scripts/gameplay/camera_2d.gd" id="1_yqjtg"]
+[ext_resource type="Texture2D" uid="uid://dy8vnfmjvlhd" path="res://assets/targets/target_1.png" id="2_bt5mj"]
+[ext_resource type="Texture2D" uid="uid://dgrojh2j0gvuj" path="res://assets/targets/Target a-1.png" id="2_sww3w"]
+[ext_resource type="Texture2D" uid="uid://cj56xowdgwxdk" path="res://assets/Table.png" id="3_37s47"]
+[ext_resource type="Texture2D" uid="uid://bvlu3kk5ab1vw" path="res://assets/targets/target_2.png" id="3_e1j6l"]
 [ext_resource type="Texture2D" uid="uid://chdlhphi2bxg" path="res://assets/drinks/SpriteSheet.png" id="3_ir15t"]
 [ext_resource type="Script" uid="uid://spfhfr2vo27j" path="res://scripts/menus/confirmation_menu.gd" id="3_lnu2h"]
+[ext_resource type="Texture2D" uid="uid://d27du6sh1e8el" path="res://assets/targets/Target a-2.png" id="3_suyxu"]
 [ext_resource type="Script" uid="uid://btea14wxvfbs2" path="res://scripts/gameplay/lazy_susan.gd" id="4_iywne"]
+[ext_resource type="Texture2D" uid="uid://q5p862fv7fa5" path="res://assets/targets/target_3.png" id="4_pl11u"]
+[ext_resource type="Texture2D" uid="uid://bq86q1c3c3xst" path="res://assets/targets/Target a-3.png" id="4_sgl2t"]
 [ext_resource type="Script" uid="uid://ufjs54iamur6" path="res://scripts/menus/drink_menu.gd" id="5_iywne"]
 [ext_resource type="Texture2D" uid="uid://2hw2fbuujkg1" path="res://assets/drinks/drink_1.png" id="6_ir15t"]
 [ext_resource type="Script" uid="uid://pbot1780v53o" path="res://scripts/menus/target_menu.gd" id="6_p57ef"]
@@ -17,6 +24,27 @@
 [ext_resource type="Texture2D" uid="uid://dr1i322246nmr" path="res://assets/drinks/Drink_7.png" id="12_5newe"]
 [ext_resource type="Script" uid="uid://deaai2bhdeei8" path="res://scripts/on_screen_text/phone_call.gd" id="12_kvuet"]
 [ext_resource type="Texture2D" uid="uid://b4yq0i8k8wf1r" path="res://assets/drinks/Drink_8.png" id="13_37s47"]
+[ext_resource type="Texture2D" uid="uid://b0tetluulxpbi" path="res://assets/Phone-off.png" id="18_5newe"]
+[ext_resource type="Texture2D" uid="uid://b5016hyhj36xv" path="res://assets/Phone-on.png" id="19_37s47"]
+[ext_resource type="Texture2D" uid="uid://bro2kdkr48dmf" path="res://assets/Arm.png" id="23_e1j6l"]
+[ext_resource type="FontFile" uid="uid://cif71sfcwaqe4" path="res://assets/fonts/Marker SD.ttf" id="24_pl11u"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wljb1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_sww3w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_suyxu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_sgl2t")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bt5mj"]
 atlas = ExtResource("3_ir15t")
@@ -85,6 +113,33 @@ animations = [{
 [sub_resource type="LabelSettings" id="LabelSettings_lbhrr"]
 font_size = 32
 
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_qouja"]
+size = Vector2(200, 400)
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_wljb1"]
+size = Vector2(200, 400)
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_v2yb1"]
+size = Vector2(200, 400)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5newe"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_5newe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_37s47")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bt5mj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bhx41"]
+
 [node name="Game" type="Node2D" unique_id=1428437104]
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=523152189]
@@ -92,11 +147,34 @@ position_smoothing_enabled = true
 position_smoothing_speed = 1.0
 script = ExtResource("1_yqjtg")
 
+[node name="Target_A" type="AnimatedSprite2D" parent="." unique_id=54209957]
+position = Vector2(9.536743e-07, -103.00001)
+scale = Vector2(0.61702853, 0.6170285)
+sprite_frames = SubResource("SpriteFrames_wljb1")
+
+[node name="Npc1" type="Sprite2D" parent="." unique_id=931792463]
+position = Vector2(-356, -65)
+texture = ExtResource("2_bt5mj")
+
+[node name="Npc2" type="Sprite2D" parent="." unique_id=1558193282]
+visible = false
+position = Vector2(-1, -78)
+texture = ExtResource("3_e1j6l")
+
+[node name="Npc3" type="Sprite2D" parent="." unique_id=531989089]
+position = Vector2(357, -71)
+texture = ExtResource("4_pl11u")
+
+[node name="Table" type="Sprite2D" parent="." unique_id=983845003]
+position = Vector2(-18, 255)
+scale = Vector2(0.7524851, 0.7524851)
+texture = ExtResource("3_37s47")
+
 [node name="Lazy Susan" type="Area2D" parent="." unique_id=785796523]
 script = ExtResource("4_iywne")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Lazy Susan" unique_id=438128403]
-position = Vector2(-2, -18.000008)
+position = Vector2(0, 155)
 scale = Vector2(0.4, 0.407)
 sprite_frames = SubResource("SpriteFrames_qouja")
 
@@ -104,6 +182,7 @@ sprite_frames = SubResource("SpriteFrames_qouja")
 position = Vector2(-2.5, -17.5)
 
 [node name="Confirmation Menu" type="CanvasLayer" parent="." unique_id=836725415]
+visible = false
 
 [node name="Control" type="Control" parent="Confirmation Menu" unique_id=1373373198]
 layout_mode = 3
@@ -147,6 +226,7 @@ layout_mode = 2
 text = "NO!"
 
 [node name="Drink Menu" type="CanvasLayer" parent="." unique_id=1393146838]
+visible = false
 
 [node name="Control" type="Control" parent="Drink Menu" unique_id=1211320975]
 layout_mode = 3
@@ -248,31 +328,36 @@ stretch_mode = 4
 [node name="Target Menu" type="CanvasLayer" parent="." unique_id=1541135499]
 
 [node name="Control" type="Control" parent="Target Menu" unique_id=1878676991]
+clip_contents = true
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 250.0
 offset_top = 74.0
-offset_right = -629.0
+offset_right = -216.0
 offset_bottom = 47.0
 grow_horizontal = 2
 grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
 script = ExtResource("6_p57ef")
 
 [node name="ColorRect" type="ColorRect" parent="Target Menu/Control" unique_id=577320622]
 layout_mode = 0
-offset_right = 722.0
+offset_right = 686.0
 offset_bottom = 499.0
 color = Color(0.37712613, 0.38772944, 0.3922603, 1)
 
 [node name="PanelContainer" type="PanelContainer" parent="Target Menu/Control" unique_id=477248572]
 layout_mode = 0
-offset_right = 724.0
+offset_right = 686.0
 offset_bottom = 502.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Target Menu/Control/PanelContainer" unique_id=588588335]
 layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
 
 [node name="Title" type="Label" parent="Target Menu/Control/PanelContainer/VBoxContainer" unique_id=1151234688]
 layout_mode = 2
@@ -282,24 +367,29 @@ horizontal_alignment = 1
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Target Menu/Control/PanelContainer/VBoxContainer" unique_id=851086978]
 layout_mode = 2
+size_flags_horizontal = 4
 alignment = 1
 
-[node name="1" type="Button" parent="Target Menu/Control/PanelContainer/VBoxContainer/HBoxContainer" unique_id=440227103]
-custom_minimum_size = Vector2(225, 425)
+[node name="target_1" type="TextureButton" parent="Target Menu/Control/PanelContainer/VBoxContainer/HBoxContainer" unique_id=2030557215]
+custom_minimum_size = Vector2(200, 400)
 layout_mode = 2
-text = "1"
+size_flags_horizontal = 4
+texture_normal = SubResource("PlaceholderTexture2D_qouja")
 
-[node name="2" type="Button" parent="Target Menu/Control/PanelContainer/VBoxContainer/HBoxContainer" unique_id=538014002]
-custom_minimum_size = Vector2(225, 210)
+[node name="target_2" type="TextureButton" parent="Target Menu/Control/PanelContainer/VBoxContainer/HBoxContainer" unique_id=1673792942]
+custom_minimum_size = Vector2(200, 400)
 layout_mode = 2
-text = "2"
+size_flags_horizontal = 4
+texture_normal = SubResource("PlaceholderTexture2D_wljb1")
 
-[node name="3" type="Button" parent="Target Menu/Control/PanelContainer/VBoxContainer/HBoxContainer" unique_id=1330726386]
-custom_minimum_size = Vector2(225, 210)
+[node name="target_3" type="TextureButton" parent="Target Menu/Control/PanelContainer/VBoxContainer/HBoxContainer" unique_id=988384048]
+custom_minimum_size = Vector2(200, 400)
 layout_mode = 2
-text = "3"
+size_flags_horizontal = 4
+texture_normal = SubResource("PlaceholderTexture2D_v2yb1")
 
 [node name="Final Menu" type="CanvasLayer" parent="." unique_id=856374487]
+visible = false
 
 [node name="Control" type="Control" parent="Final Menu" unique_id=660241745]
 layout_mode = 3
@@ -354,25 +444,47 @@ text = "NO!"
 
 [node name="Phone Call" type="Node" parent="." unique_id=228923896]
 
+[node name="Phone Sprite" type="AnimatedSprite2D" parent="Phone Call" unique_id=1835425870]
+position = Vector2(-105, 168)
+scale = Vector2(0.6055069, 0.60550684)
+sprite_frames = SubResource("SpriteFrames_5newe")
+
 [node name="Phone Call" type="TextEdit" parent="Phone Call" unique_id=419674656]
-offset_left = -359.0
-offset_top = 238.0
-offset_right = -67.0
-offset_bottom = 322.0
+offset_left = -137.0
+offset_top = 100.0
+offset_right = 263.0
+offset_bottom = 208.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 30
-text = "hgfhfgh"
+theme_override_styles/normal = SubResource("StyleBoxEmpty_bt5mj")
+text = "This is a text message 
+from a very serious person"
 script = ExtResource("12_kvuet")
 
 [node name="Waiter" type="Node" parent="." unique_id=120914305]
 
+[node name="Arm" type="Sprite2D" parent="Waiter" unique_id=770000876]
+position = Vector2(1101, 24)
+scale = Vector2(0.72359735, 0.72359735)
+texture = ExtResource("23_e1j6l")
+
 [node name="Waiter" type="TextEdit" parent="Waiter" unique_id=454062786]
-offset_left = 304.0
-offset_top = -37.0
-offset_right = 596.0
-offset_bottom = 47.0
-theme_override_font_sizes/font_size = 30
-text = "asddasd"
+anchors_preset = -1
+anchor_left = -0.088541664
+anchor_right = -0.088541664
+anchor_bottom = 0.083333336
+offset_left = 141.0
+offset_top = 32.0
+offset_right = 433.0
+offset_bottom = 116.0
+theme_override_colors/font_color = Color(0.17262545, 0.30681378, 0.41002965, 1)
+theme_override_fonts/font = ExtResource("24_pl11u")
+theme_override_font_sizes/font_size = 26
+theme_override_styles/normal = SubResource("StyleBoxEmpty_bhx41")
+text = "The guy in the kitchen forgot which drink he poisoned"
+wrap_mode = 1
 script = ExtResource("12_kvuet")
+metadata/_edit_use_anchors_ = true
 
 [node name="Timer" type="Node" parent="." unique_id=902966783]
 script = ExtResource("11_dinhu")
@@ -382,8 +494,11 @@ offset_left = 413.0
 offset_top = -308.0
 offset_right = 538.0
 offset_bottom = -249.0
+metadata/_edit_use_anchors_ = true
 
 [node name="Timer" type="Timer" parent="Timer" unique_id=2095725279]
 wait_time = 120.0
 one_shot = true
 autostart = true
+
+[connection signal="pressed" from="Target Menu/Control/PanelContainer/VBoxContainer/HBoxContainer/target_1" to="Target Menu/Control" method="_on_npc_1_pressed"]
