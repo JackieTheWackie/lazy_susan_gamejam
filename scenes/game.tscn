@@ -1,14 +1,18 @@
 [gd_scene format=3 uid="uid://byt1f14cqr2s8"]
 
 [ext_resource type="Script" uid="uid://dg6uhlxbwiifg" path="res://scripts/gameplay/camera_2d.gd" id="1_yqjtg"]
-[ext_resource type="Texture2D" uid="uid://dy8vnfmjvlhd" path="res://assets/target_1.png" id="2_bt5mj"]
+[ext_resource type="Texture2D" uid="uid://dy8vnfmjvlhd" path="res://assets/Targets/target_1.png" id="2_bt5mj"]
+[ext_resource type="Texture2D" uid="uid://bvjpkjgcsv62c" path="res://assets/Targets/Target_2-Sprite_1.png" id="2_suyxu"]
 [ext_resource type="Texture2D" uid="uid://cj56xowdgwxdk" path="res://assets/Table.png" id="3_37s47"]
-[ext_resource type="Texture2D" uid="uid://bvlu3kk5ab1vw" path="res://assets/target_2.png" id="3_e1j6l"]
+[ext_resource type="Texture2D" uid="uid://bvlu3kk5ab1vw" path="res://assets/Targets/target_2.png" id="3_e1j6l"]
 [ext_resource type="Texture2D" uid="uid://chdlhphi2bxg" path="res://assets/drinks/SpriteSheet.png" id="3_ir15t"]
 [ext_resource type="Script" uid="uid://spfhfr2vo27j" path="res://scripts/menus/confirmation_menu.gd" id="3_lnu2h"]
+[ext_resource type="Texture2D" uid="uid://6wsv38gm5jlv" path="res://assets/Targets/Target_2-Sprite_2.png" id="3_sgl2t"]
 [ext_resource type="Script" uid="uid://btea14wxvfbs2" path="res://scripts/gameplay/lazy_susan.gd" id="4_iywne"]
-[ext_resource type="Texture2D" uid="uid://q5p862fv7fa5" path="res://assets/target_3.png" id="4_pl11u"]
+[ext_resource type="Texture2D" uid="uid://q5p862fv7fa5" path="res://assets/Targets/target_3.png" id="4_pl11u"]
+[ext_resource type="Texture2D" uid="uid://o6yhhe4hgoy2" path="res://assets/Targets/Target_2-Sprite_3.png" id="4_qouja"]
 [ext_resource type="Script" uid="uid://ufjs54iamur6" path="res://scripts/menus/drink_menu.gd" id="5_iywne"]
+[ext_resource type="Texture2D" uid="uid://ceuqhg4cf5s68" path="res://assets/Targets/Testperson2.png" id="5_qnb83"]
 [ext_resource type="Texture2D" uid="uid://2hw2fbuujkg1" path="res://assets/drinks/drink_1.png" id="6_ir15t"]
 [ext_resource type="Script" uid="uid://pbot1780v53o" path="res://scripts/menus/target_menu.gd" id="6_p57ef"]
 [ext_resource type="Texture2D" uid="uid://2yuvqwkkhfsw" path="res://assets/drinks/drink_2.png" id="7_ca42v"]
@@ -25,6 +29,23 @@
 [ext_resource type="Texture2D" uid="uid://b5016hyhj36xv" path="res://assets/Phone-on.png" id="19_37s47"]
 [ext_resource type="Texture2D" uid="uid://bro2kdkr48dmf" path="res://assets/Arm.png" id="23_e1j6l"]
 [ext_resource type="FontFile" uid="uid://cif71sfcwaqe4" path="res://assets/Marker SD.ttf" id="24_pl11u"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wljb1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_suyxu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_sgl2t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_qouja")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bt5mj"]
 atlas = ExtResource("3_ir15t")
@@ -118,17 +139,29 @@ position_smoothing_enabled = true
 position_smoothing_speed = 1.0
 script = ExtResource("1_yqjtg")
 
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=54209957]
+position = Vector2(9.536743e-07, -103.00001)
+scale = Vector2(0.61702853, 0.6170285)
+sprite_frames = SubResource("SpriteFrames_wljb1")
+
 [node name="Npc1" type="Sprite2D" parent="." unique_id=931792463]
+visible = false
 position = Vector2(-356, -65)
 texture = ExtResource("2_bt5mj")
 
 [node name="Npc2" type="Sprite2D" parent="." unique_id=1558193282]
+visible = false
 position = Vector2(-1, -78)
 texture = ExtResource("3_e1j6l")
 
 [node name="Npc3" type="Sprite2D" parent="." unique_id=531989089]
 position = Vector2(357, -71)
 texture = ExtResource("4_pl11u")
+
+[node name="Testperson2" type="Sprite2D" parent="." unique_id=1283587188]
+position = Vector2(-373, -110.99999)
+scale = Vector2(0.6760243, 0.67602426)
+texture = ExtResource("5_qnb83")
 
 [node name="Table" type="Sprite2D" parent="." unique_id=983845003]
 position = Vector2(-18, 246)
@@ -147,6 +180,7 @@ sprite_frames = SubResource("SpriteFrames_qouja")
 position = Vector2(-2.5, -17.5)
 
 [node name="Confirmation Menu" type="CanvasLayer" parent="." unique_id=836725415]
+visible = false
 
 [node name="Control" type="Control" parent="Confirmation Menu" unique_id=1373373198]
 layout_mode = 3
@@ -190,6 +224,7 @@ layout_mode = 2
 text = "NO!"
 
 [node name="Drink Menu" type="CanvasLayer" parent="." unique_id=1393146838]
+visible = false
 
 [node name="Control" type="Control" parent="Drink Menu" unique_id=1211320975]
 layout_mode = 3
@@ -289,6 +324,7 @@ ignore_texture_size = true
 stretch_mode = 4
 
 [node name="Target Menu" type="CanvasLayer" parent="." unique_id=1541135499]
+visible = false
 
 [node name="Control" type="Control" parent="Target Menu" unique_id=1878676991]
 layout_mode = 3
@@ -344,6 +380,7 @@ size_flags_horizontal = 4
 texture_normal = ExtResource("4_pl11u")
 
 [node name="Final Menu" type="CanvasLayer" parent="." unique_id=856374487]
+visible = false
 
 [node name="Control" type="Control" parent="Final Menu" unique_id=660241745]
 layout_mode = 3
@@ -418,12 +455,13 @@ script = ExtResource("12_kvuet")
 [node name="Waiter" type="Node" parent="." unique_id=120914305]
 
 [node name="Arm" type="Sprite2D" parent="Waiter" unique_id=770000876]
-position = Vector2(144, 108.00001)
+position = Vector2(1101, 24)
 scale = Vector2(0.72359735, 0.72359735)
 texture = ExtResource("23_e1j6l")
 
 [node name="Waiter" type="TextEdit" parent="Waiter" unique_id=454062786]
 anchors_preset = -1
+anchor_left = -0.088541664
 anchor_right = -0.088541664
 anchor_bottom = 0.083333336
 offset_left = 141.0
