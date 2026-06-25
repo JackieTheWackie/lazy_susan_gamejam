@@ -9,6 +9,7 @@ extends CanvasLayer
 @onready var start: Button = $Start
 
 func _ready() -> void:
+	start.visible = false
 	intro_1.visible = true
 	intro_2.visible = false
 	intro_3.visible = false
@@ -32,3 +33,4 @@ func _input(event: InputEvent) -> void:
 		elif intro_4.visible == true:
 			intro_4.visible = false
 			intro_5.visible = true
+			start.visible = true
