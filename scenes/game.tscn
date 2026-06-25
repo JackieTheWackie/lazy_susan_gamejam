@@ -440,40 +440,6 @@ text = "YES!"
 layout_mode = 2
 text = "NO!"
 
-[node name="Game Result" type="CanvasLayer" parent="." unique_id=155840623]
-
-[node name="Control" type="Control" parent="Game Result" unique_id=377092502]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 250.0
-offset_top = 74.0
-offset_right = -629.0
-offset_bottom = 47.0
-grow_horizontal = 2
-grow_vertical = 2
-script = ExtResource("16_ssvqc")
-
-[node name="ColorRect" type="ColorRect" parent="Game Result/Control" unique_id=1405151184]
-layout_mode = 0
-offset_right = 722.0
-offset_bottom = 499.0
-color = Color(0.37712613, 0.38772944, 0.3922603, 1)
-
-[node name="PanelContainer" type="PanelContainer" parent="Game Result/Control" unique_id=1172534840]
-layout_mode = 0
-offset_right = 724.0
-offset_bottom = 502.0
-
-[node name="VBoxContainer" type="VBoxContainer" parent="Game Result/Control/PanelContainer" unique_id=1506368557]
-layout_mode = 2
-
-[node name="Result" type="Label" parent="Game Result/Control/PanelContainer/VBoxContainer" unique_id=1524792661]
-layout_mode = 2
-label_settings = SubResource("LabelSettings_lbhrr")
-horizontal_alignment = 1
-
 [node name="Phone Call" type="Node" parent="." unique_id=228923896]
 
 [node name="Phone Sprite" type="AnimatedSprite2D" parent="Phone Call" unique_id=1835425870]
