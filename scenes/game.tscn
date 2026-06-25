@@ -453,7 +453,6 @@ ignore_texture_size = true
 stretch_mode = 6
 
 [node name="Target Menu" type="CanvasLayer" parent="." unique_id=1541135499]
-visible = false
 
 [node name="Control" type="Control" parent="Target Menu" unique_id=1878676991]
 custom_minimum_size = Vector2(700, 400)
@@ -533,7 +532,6 @@ layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxEmpty_7025r")
 
 [node name="Final Menu" type="CanvasLayer" parent="." unique_id=856374487]
-visible = false
 
 [node name="Control" type="Control" parent="Final Menu" unique_id=660241745]
 layout_mode = 3
@@ -587,7 +585,6 @@ layout_mode = 2
 text = "NO!"
 
 [node name="Game Result" type="CanvasLayer" parent="." unique_id=155840623]
-visible = false
 
 [node name="Control" type="Control" parent="Game Result" unique_id=377092502]
 layout_mode = 3
@@ -629,7 +626,6 @@ scale = Vector2(0.6055069, 0.60550684)
 sprite_frames = SubResource("SpriteFrames_5newe")
 
 [node name="Phone Call" type="TextEdit" parent="Phone Call" unique_id=419674656]
-visible = false
 offset_left = -137.0
 offset_top = 100.0
 offset_right = 263.0
