@@ -5,7 +5,6 @@ extends Control
 @onready var yes_button: Button = $PanelContainer/VBoxContainer/Yes
 @onready var no_button: Button = $PanelContainer/VBoxContainer/No
 @onready var drink_menu: Control = $"../../Drink Menu/Control"
-@onready var game_result: Control = $"../../Game Result/Control"
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -19,8 +18,10 @@ func _on_visibility_changed():
 	actual_target.text = str(GameManager.selected_target)
 
 func _on_yes_pressed() -> void:
-	hide()
-	game_result.show()
+	if(GameManager.drink_correct && GameManager.target_correct):
+		print("YIPPEE")
+	else:
+		print("YOU STINK")
 
 func _on_no_pressed() -> void:
 	hide()
