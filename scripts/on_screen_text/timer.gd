@@ -61,13 +61,13 @@ func _time_left():
 		if not has_incremented:
 			# Show the hint (alternating between phone and waiter)
 			if phone_hint:
-				phone_call.text = drink_hints[current_drink_hint]
-				current_drink_hint += 1
+				phone_call.text = target_hints[current_target_hint]
+				current_target_hint += 1
 				has_incremented = true
 				phone_call.show()
 			else:
-				waiter.text = target_hints[current_target_hint]
-				current_target_hint += 1
+				waiter.text = drink_hints[current_drink_hint]
+				current_drink_hint += 1
 				has_incremented = true
 				waiter.show()
 				slide.play("slide in")
