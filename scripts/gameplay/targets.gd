@@ -5,7 +5,7 @@ extends Node2D
 @onready var target_3: AnimatedSprite2D = $"Target 3"
 @onready var timer: Timer = $"../Timer/Timer"
 
-#@onready var rand_animation = ["Laughing", "Neutral", "Talking"].pick_random()
+@onready var rand_animation = ["Laughing", "Neutral", "Talking"]
 
 func _ready() -> void:
 	target_1.play("Neutral")
@@ -16,9 +16,9 @@ func _ready() -> void:
 
 func pose() -> void:
 	while timer.time_left > 0:
-		var rand_animation = ["Laughing", "Neutral", "Talking"].pick_random()
-		await get_tree().create_timer(randi_range(1,3)).timeout
+		
+		await get_tree().create_timer(randi_range(5,10)).timeout
 		print("new pose")
-		target_1.play(rand_animation)
-		target_2.play(rand_animation)
-		target_3.play(rand_animation)
+		target_1.play(rand_animation.pick_random())
+		target_2.play(rand_animation.pick_random())
+		target_3.play(rand_animation.pick_random())
