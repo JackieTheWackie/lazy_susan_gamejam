@@ -47,15 +47,15 @@ var drink_list = [$"Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContaine
 @onready var target_hints = [
 	{
 		"number": 1,
-		"hints": ["Has Curly Hair", "Wearing a Ring", "Wearing a Flower"]
+		"hints": ["has curly hair", "is wearing a ring", "is wearing a flower"]
 	},
 	{
 		"number": 2,
-		"hints": ["Wearing Gloves", "Has Curly Hair", "Wearing a Flower"]
+		"hints": ["is wearing gloves", "has curly hair", "is wearing a flower"]
 	},
 	{
 		"number": 3,
-		"hints": ["Wearing Gloves", "Wearing a Ring", "Needs Glasses"]
+		"hints": ["is wearing gloves", "is wearing a ring", "needs glasses"]
 	}
 ]
 func _ready() -> void:

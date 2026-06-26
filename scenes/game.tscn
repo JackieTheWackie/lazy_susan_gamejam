@@ -812,12 +812,13 @@ sprite_frames = SubResource("SpriteFrames_5newe")
 
 [node name="Phone Call" type="TextEdit" parent="Phone Call" unique_id=419674656]
 offset_left = -99.0
-offset_top = 108.0
+offset_top = 70.0
 offset_right = 301.0
-offset_bottom = 216.0
+offset_bottom = 238.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxEmpty_bt5mj")
+wrap_mode = 1
 
 [node name="Phone Buzz" type="AudioStreamPlayer2D" parent="Phone Call" unique_id=2059865373]
 stream = ExtResource("27_wljb1")
