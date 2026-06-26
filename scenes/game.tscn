@@ -53,6 +53,7 @@
 [ext_resource type="Texture2D" uid="uid://dtsha43hu4mon" path="res://assets/Gun.png" id="41_o8ni1"]
 [ext_resource type="Texture2D" uid="uid://dntr3vhmcguyc" path="res://assets/Death by poison.png" id="42_3hbvx"]
 [ext_resource type="Texture2D" uid="uid://ti27374mcvl3" path="res://assets/Bubble.png" id="43_o8ni1"]
+[ext_resource type="AudioStream" uid="uid://dl045auejvqfa" path="res://assets/cheers.mp3" id="44_3hbvx"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_o8ni1"]
 animations = [{
@@ -795,6 +796,9 @@ theme_override_colors/font_color = Color(0.23921569, 0.23921569, 0.23921569, 1)
 theme_override_font_sizes/font_size = 40
 text = "Target Eliminated..."
 
+[node name="Cheers" type="AudioStreamPlayer2D" parent="Game Result/Control" unique_id=98082857]
+stream = ExtResource("44_3hbvx")
+
 [node name="Phone Call" type="Node" parent="." unique_id=228923896]
 
 [node name="Phone Sprite" type="AnimatedSprite2D" parent="Phone Call" unique_id=1835425870]
@@ -884,7 +888,7 @@ offset_left = 53.0
 offset_top = 286.0
 offset_right = 574.0
 offset_bottom = 344.0
-text = "Use WASD or ArrowKeys to SPIN the Lazy-Susan to see each drink. "
+text = "Use ArrowKeys to SPIN the Lazy-Susan to see each drink. "
 autowrap_mode = 2
 
 [node name="Label2" type="Label" parent="." unique_id=518260905]
