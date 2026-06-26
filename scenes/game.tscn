@@ -2,58 +2,58 @@
 
 [ext_resource type="Script" uid="uid://dg6uhlxbwiifg" path="res://scripts/gameplay/camera_2d.gd" id="1_yqjtg"]
 [ext_resource type="Script" uid="uid://stwy54rrvd5t" path="res://scripts/gameplay/targets.gd" id="2_7025r"]
-[ext_resource type="Texture2D" uid="uid://dqn0cm6hbgp7l" path="res://assets/Target_Sprites/Target_1-4.png" id="2_nepv3"]
-[ext_resource type="Texture2D" uid="uid://cj56xowdgwxdk" path="res://assets/Table.png" id="3_37s47"]
-[ext_resource type="Texture2D" uid="uid://bhs0oaccc6pl5" path="res://assets/Target_Sprites/Target_1-5.png" id="3_7025r"]
-[ext_resource type="Texture2D" uid="uid://chdlhphi2bxg" path="res://assets/drinks/SpriteSheet.png" id="3_ir15t"]
+[ext_resource type="Texture2D" uid="uid://dqn0cm6hbgp7l" path="res://assets/sprites/targets/Target_1-4.png" id="2_nepv3"]
+[ext_resource type="Texture2D" uid="uid://cj56xowdgwxdk" path="res://assets/sprites/drinks/Table.png" id="3_37s47"]
+[ext_resource type="Texture2D" uid="uid://bhs0oaccc6pl5" path="res://assets/sprites/targets/Target_1-5.png" id="3_7025r"]
+[ext_resource type="Texture2D" uid="uid://chdlhphi2bxg" path="res://assets/sprites/drinks/SpriteSheet.png" id="3_ir15t"]
 [ext_resource type="Script" uid="uid://spfhfr2vo27j" path="res://scripts/menus/confirmation_menu.gd" id="3_lnu2h"]
 [ext_resource type="Script" uid="uid://btea14wxvfbs2" path="res://scripts/gameplay/lazy_susan.gd" id="4_iywne"]
-[ext_resource type="Texture2D" uid="uid://bp7y7bhwr3ib0" path="res://assets/Target_Sprites/Target_1-1.png" id="4_m4url"]
-[ext_resource type="Texture2D" uid="uid://c8cqmb5nxcosm" path="res://assets/Target_Sprites/Target_1-3.png" id="5_8ool0"]
+[ext_resource type="Texture2D" uid="uid://bp7y7bhwr3ib0" path="res://assets/sprites/targets/Target_1-1.png" id="4_m4url"]
+[ext_resource type="Texture2D" uid="uid://c8cqmb5nxcosm" path="res://assets/sprites/targets/Target_1-3.png" id="5_8ool0"]
 [ext_resource type="Script" uid="uid://ufjs54iamur6" path="res://scripts/menus/drink_menu.gd" id="5_iywne"]
 [ext_resource type="Script" uid="uid://pbot1780v53o" path="res://scripts/menus/target_menu.gd" id="6_p57ef"]
-[ext_resource type="Texture2D" uid="uid://dxo84281cvprg" path="res://assets/Target_Sprites/Target_1-2.png" id="6_pr1ej"]
-[ext_resource type="Texture2D" uid="uid://bxt86pf6h8jrn" path="res://assets/Target_Sprites/Target_2-4.png" id="7_05nbr"]
+[ext_resource type="Texture2D" uid="uid://dxo84281cvprg" path="res://assets/sprites/targets/Target_1-2.png" id="6_pr1ej"]
+[ext_resource type="Texture2D" uid="uid://bxt86pf6h8jrn" path="res://assets/sprites/targets/Target_2-4.png" id="7_05nbr"]
 [ext_resource type="Script" uid="uid://siea14effeq5" path="res://scripts/menus/final_menu.gd" id="7_u5sy4"]
-[ext_resource type="Texture2D" uid="uid://ckwy7uv5d7jv3" path="res://assets/drinks/Drink_3.png" id="8_rysoc"]
-[ext_resource type="Texture2D" uid="uid://2xe6ymw0ooe2" path="res://assets/Target_Sprites/Target_2-1.png" id="9_oaba0"]
-[ext_resource type="Texture2D" uid="uid://db0dqdq61xouc" path="res://assets/Target_Sprites/Target_2-3.png" id="10_458eo"]
-[ext_resource type="Texture2D" uid="uid://br0jy4brl35ma" path="res://assets/drinks/Drink_6.png" id="11_1kice"]
+[ext_resource type="Texture2D" uid="uid://ckwy7uv5d7jv3" path="res://assets/sprites/drinks/drink_3.png" id="8_rysoc"]
+[ext_resource type="Texture2D" uid="uid://2xe6ymw0ooe2" path="res://assets/sprites/targets/Target_2-1.png" id="9_oaba0"]
+[ext_resource type="Texture2D" uid="uid://db0dqdq61xouc" path="res://assets/sprites/targets/Target_2-3.png" id="10_458eo"]
+[ext_resource type="Texture2D" uid="uid://br0jy4brl35ma" path="res://assets/sprites/drinks/Drink_6.png" id="11_1kice"]
 [ext_resource type="Script" uid="uid://dd1cvf04wu7is" path="res://scripts/on_screen_text/timer.gd" id="11_dinhu"]
-[ext_resource type="Texture2D" uid="uid://be8pdqwpswk7b" path="res://assets/Target_Sprites/Target_2-2.png" id="11_h3rex"]
-[ext_resource type="Texture2D" uid="uid://cxsll5atavdw7" path="res://assets/Target_Sprites/Target_3-4.png" id="12_fedci"]
-[ext_resource type="Script" uid="uid://deaai2bhdeei8" path="res://scripts/on_screen_text/phone_call.gd" id="12_kvuet"]
-[ext_resource type="Texture2D" uid="uid://upsd5ktnkqls" path="res://assets/Target_Sprites/Target_3-5.png" id="13_8qswn"]
-[ext_resource type="Texture2D" uid="uid://b4yq0i8k8wf1r" path="res://assets/drinks/Drink_8.png" id="13_37s47"]
-[ext_resource type="Texture2D" uid="uid://cwm1yf1mw0udn" path="res://assets/Target_Sprites/Target_3-1.png" id="14_rm0al"]
-[ext_resource type="Texture2D" uid="uid://cv5vug405uqlt" path="res://assets/Target_Sprites/Target_3-3.png" id="15_i4re6"]
-[ext_resource type="Texture2D" uid="uid://bh2cyt1s30x6d" path="res://assets/Target_Sprites/Target_3-2.png" id="16_pf7vy"]
+[ext_resource type="Texture2D" uid="uid://be8pdqwpswk7b" path="res://assets/sprites/targets/Target_2-2.png" id="11_h3rex"]
+[ext_resource type="Texture2D" uid="uid://cxsll5atavdw7" path="res://assets/sprites/targets/Target_3-4.png" id="12_fedci"]
+[ext_resource type="Texture2D" uid="uid://upsd5ktnkqls" path="res://assets/sprites/targets/Target_3-5.png" id="13_8qswn"]
+[ext_resource type="Texture2D" uid="uid://b4yq0i8k8wf1r" path="res://assets/sprites/drinks/Drink_8.png" id="13_37s47"]
+[ext_resource type="Texture2D" uid="uid://cwm1yf1mw0udn" path="res://assets/sprites/targets/Target_3-1.png" id="14_rm0al"]
+[ext_resource type="Texture2D" uid="uid://cv5vug405uqlt" path="res://assets/sprites/targets/Target_3-3.png" id="15_i4re6"]
+[ext_resource type="Texture2D" uid="uid://bh2cyt1s30x6d" path="res://assets/sprites/targets/Target_3-2.png" id="16_pf7vy"]
 [ext_resource type="Script" uid="uid://b0mfrtif7ynxr" path="res://scripts/menus/game_result.gd" id="16_ssvqc"]
-[ext_resource type="Texture2D" uid="uid://b0tetluulxpbi" path="res://assets/Phone-off.png" id="18_5newe"]
-[ext_resource type="Texture2D" uid="uid://b5016hyhj36xv" path="res://assets/Phone-on.png" id="19_37s47"]
+[ext_resource type="Texture2D" uid="uid://b0tetluulxpbi" path="res://assets/sprites/hints/Phone-off.png" id="18_5newe"]
+[ext_resource type="Texture2D" uid="uid://b5016hyhj36xv" path="res://assets/sprites/hints/Phone-on.png" id="19_37s47"]
 [ext_resource type="AudioStream" uid="uid://cqhlt7b8ks813" path="res://assets/sounds/lazy susan sound v2.mp3" id="20_8qswn"]
-[ext_resource type="Texture2D" uid="uid://b4vmk2teyd4bs" path="res://assets/drinks/Drink_1.png" id="22_fedci"]
-[ext_resource type="Texture2D" uid="uid://cjjmus6st6fbc" path="res://assets/drinks/Poison-Icons/Drink_1_poison.png" id="22_oaba0"]
-[ext_resource type="Texture2D" uid="uid://d2dm358g87ero" path="res://assets/drinks/Poison-Icons/Drink_2_poison.png" id="23_458eo"]
-[ext_resource type="Texture2D" uid="uid://bro2kdkr48dmf" path="res://assets/Arm.png" id="23_e1j6l"]
-[ext_resource type="Texture2D" uid="uid://3637k6an6mk1" path="res://assets/drinks/Drink_2.png" id="24_8qswn"]
+[ext_resource type="Texture2D" uid="uid://b4vmk2teyd4bs" path="res://assets/sprites/drinks/drink_1.png" id="22_fedci"]
+[ext_resource type="Texture2D" uid="uid://cjjmus6st6fbc" path="res://assets/sprites/drinks/Poison-Icons/Drink_1_poison.png" id="22_oaba0"]
+[ext_resource type="Texture2D" uid="uid://d2dm358g87ero" path="res://assets/sprites/drinks/Poison-Icons/Drink_2_poison.png" id="23_458eo"]
+[ext_resource type="Texture2D" uid="uid://bro2kdkr48dmf" path="res://assets/sprites/hints/Arm.png" id="23_e1j6l"]
+[ext_resource type="Texture2D" uid="uid://3637k6an6mk1" path="res://assets/sprites/drinks/drink_2.png" id="24_8qswn"]
 [ext_resource type="FontFile" uid="uid://cif71sfcwaqe4" path="res://assets/fonts/Marker SD.ttf" id="24_pl11u"]
-[ext_resource type="Texture2D" uid="uid://x0q1pwu06y8p" path="res://assets/drinks/Poison-Icons/Drink_3_poison.png" id="25_h3rex"]
-[ext_resource type="Texture2D" uid="uid://cht7xkd1nmjns" path="res://assets/drinks/Poison-Icons/Drink_4_poison.png" id="26_fedci"]
-[ext_resource type="Texture2D" uid="uid://6a4bttp3de2t" path="res://assets/drinks/Poison-Icons/Drink_5_poison.png" id="27_8qswn"]
+[ext_resource type="Texture2D" uid="uid://x0q1pwu06y8p" path="res://assets/sprites/drinks/Poison-Icons/Drink_3_poison.png" id="25_h3rex"]
+[ext_resource type="Texture2D" uid="uid://cht7xkd1nmjns" path="res://assets/sprites/drinks/Poison-Icons/Drink_4_poison.png" id="26_fedci"]
+[ext_resource type="Texture2D" uid="uid://6a4bttp3de2t" path="res://assets/sprites/drinks/Poison-Icons/Drink_5_poison.png" id="27_8qswn"]
 [ext_resource type="AudioStream" uid="uid://dn56p51s38a5i" path="res://assets/sounds/phone_buzz.wav" id="27_wljb1"]
-[ext_resource type="Texture2D" uid="uid://4q67pd72gspq" path="res://assets/drinks/Drink_4.png" id="28_rm0al"]
-[ext_resource type="Texture2D" uid="uid://ge37qr8xfh5x" path="res://assets/drinks/Poison-Icons/Drink_6_poison.png" id="29_rm0al"]
-[ext_resource type="Texture2D" uid="uid://c8gvkv3gfynbi" path="res://assets/drinks/Poison-Icons/Drink_7_poison.png" id="30_i4re6"]
+[ext_resource type="Texture2D" uid="uid://4q67pd72gspq" path="res://assets/sprites/drinks/drink_4.png" id="28_rm0al"]
+[ext_resource type="Texture2D" uid="uid://ge37qr8xfh5x" path="res://assets/sprites/drinks/Poison-Icons/Drink_6_poison.png" id="29_rm0al"]
+[ext_resource type="Texture2D" uid="uid://c8gvkv3gfynbi" path="res://assets/sprites/drinks/Poison-Icons/Drink_7_poison.png" id="30_i4re6"]
 [ext_resource type="AudioStream" uid="uid://cs04vjreqeb4k" path="res://assets/sounds/background-music.mp3" id="30_sgl2t"]
 [ext_resource type="AudioStream" uid="uid://dvllbeu62dlcw" path="res://assets/sounds/waiter_ahem.wav" id="30_v2yb1"]
 [ext_resource type="AudioStream" uid="uid://bjvu1xxf4igni" path="res://assets/sounds/background-noise.wav" id="31_qouja"]
-[ext_resource type="Texture2D" uid="uid://c2g6tiwuu57rq" path="res://assets/drinks/Poison-Icons/Drink_8_poison.png" id="32_pf7vy"]
-[ext_resource type="Texture2D" uid="uid://dys87s0e2e3rc" path="res://assets/Cheers.png" id="40_pf7vy"]
-[ext_resource type="Texture2D" uid="uid://dtsha43hu4mon" path="res://assets/Gun.png" id="41_o8ni1"]
-[ext_resource type="Texture2D" uid="uid://dntr3vhmcguyc" path="res://assets/Death by poison.png" id="42_3hbvx"]
-[ext_resource type="Texture2D" uid="uid://ti27374mcvl3" path="res://assets/Bubble.png" id="43_o8ni1"]
-[ext_resource type="AudioStream" uid="uid://dl045auejvqfa" path="res://assets/cheers.mp3" id="44_3hbvx"]
+[ext_resource type="Texture2D" uid="uid://c2g6tiwuu57rq" path="res://assets/sprites/drinks/Poison-Icons/Drink_8_poison.png" id="32_pf7vy"]
+[ext_resource type="Texture2D" uid="uid://dys87s0e2e3rc" path="res://assets/sprites/results/Cheers.png" id="40_pf7vy"]
+[ext_resource type="Texture2D" uid="uid://dtsha43hu4mon" path="res://assets/sprites/results/Gun.png" id="41_o8ni1"]
+[ext_resource type="Texture2D" uid="uid://dntr3vhmcguyc" path="res://assets/sprites/results/Death by poison.png" id="42_3hbvx"]
+[ext_resource type="Texture2D" uid="uid://ti27374mcvl3" path="res://assets/sprites/hints/Bubble.png" id="43_o8ni1"]
+[ext_resource type="AudioStream" uid="uid://dptp7uiuo25e2" path="res://assets/sounds/glass_clink.mp3" id="44_o8ni1"]
+[ext_resource type="Script" uid="uid://pl0mhrswvpvb" path="res://scripts/on_screen_text/instructions.gd" id="54_3hbvx"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_o8ni1"]
 animations = [{
@@ -730,6 +730,10 @@ layout_mode = 2
 label_settings = SubResource("LabelSettings_lbhrr")
 horizontal_alignment = 1
 
+[node name="Reset Button" type="Button" parent="Game Result/Control/PanelContainer/VBoxContainer" unique_id=2089315670]
+layout_mode = 2
+text = "Play Again?"
+
 [node name="endings" type="AnimatedSprite2D" parent="Game Result/Control/PanelContainer/VBoxContainer" unique_id=17872452]
 position = Vector2(360.22217, 286.24997)
 scale = Vector2(0.3717592, 0.37175924)
@@ -797,7 +801,7 @@ theme_override_font_sizes/font_size = 40
 text = "Target Eliminated..."
 
 [node name="Cheers" type="AudioStreamPlayer2D" parent="Game Result/Control" unique_id=98082857]
-stream = ExtResource("44_3hbvx")
+stream = ExtResource("44_o8ni1")
 
 [node name="Phone Call" type="Node" parent="." unique_id=228923896]
 
@@ -814,9 +818,6 @@ offset_bottom = 216.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxEmpty_bt5mj")
-text = "This is a text message 
-from a very serious person"
-script = ExtResource("12_kvuet")
 
 [node name="Phone Buzz" type="AudioStreamPlayer2D" parent="Phone Call" unique_id=2059865373]
 stream = ExtResource("27_wljb1")
@@ -847,7 +848,6 @@ theme_override_font_sizes/font_size = 40
 theme_override_styles/normal = SubResource("StyleBoxEmpty_bhx41")
 text = "The guy in the kitchen forgot which drink he poisoned"
 wrap_mode = 1
-script = ExtResource("12_kvuet")
 
 [node name="Slide" type="AnimationPlayer" parent="Waiter/Arm" unique_id=141024032]
 root_node = NodePath("../../../Phone Call")
@@ -873,17 +873,20 @@ wait_time = 120.0
 one_shot = true
 autostart = true
 
-[node name="Node" type="Node" parent="." unique_id=1843692372]
+[node name="Background Ambiance" type="Node" parent="." unique_id=1843692372]
 
-[node name="Background Music" type="AudioStreamPlayer2D" parent="Node" unique_id=1425360798]
+[node name="Background Music" type="AudioStreamPlayer2D" parent="Background Ambiance" unique_id=1425360798]
 stream = ExtResource("30_sgl2t")
 autoplay = true
 
-[node name="Background Noise" type="AudioStreamPlayer2D" parent="Node" unique_id=1355647677]
+[node name="Background Noise" type="AudioStreamPlayer2D" parent="Background Ambiance" unique_id=1355647677]
 stream = ExtResource("31_qouja")
 autoplay = true
 
-[node name="Label" type="Label" parent="." unique_id=1384342171]
+[node name="Instructions" type="Node" parent="." unique_id=1779715640]
+script = ExtResource("54_3hbvx")
+
+[node name="Bottom Instruction" type="Label" parent="Instructions" unique_id=1384342171]
 offset_left = 53.0
 offset_top = 286.0
 offset_right = 574.0
@@ -891,12 +894,17 @@ offset_bottom = 344.0
 text = "Use ArrowKeys to SPIN the Lazy-Susan to see each drink. "
 autowrap_mode = 2
 
-[node name="Label2" type="Label" parent="." unique_id=518260905]
+[node name="Top Instruction" type="Label" parent="Instructions" unique_id=518260905]
 offset_left = -562.0
 offset_top = -306.0
 offset_right = -19.0
 offset_bottom = -231.0
 text = "Hit Escape to make your choice early or wait for the timer to run out."
 autowrap_mode = 2
+
+[node name="Timer" type="Timer" parent="Instructions" unique_id=310077565]
+wait_time = 15.0
+one_shot = true
+autostart = true
 
 [connection signal="pressed" from="Target Menu/Control/PanelContainer/VBoxContainer/HBoxContainer/target_1" to="Target Menu/Control" method="_on_npc_1_pressed"]

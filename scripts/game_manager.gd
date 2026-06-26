@@ -61,3 +61,4 @@ var drink_list = [$"Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContaine
 func _ready() -> void:
 	actual_drink = randi_range(1,8)
 	actual_target = randi_range(1,3)
+	
