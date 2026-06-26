@@ -385,7 +385,6 @@ stream = ExtResource("20_8qswn")
 volume_db = 14.596
 
 [node name="Confirmation Menu" type="CanvasLayer" parent="." unique_id=836725415]
-visible = false
 
 [node name="Control" type="Control" parent="Confirmation Menu" unique_id=1373373198]
 layout_mode = 3
@@ -429,7 +428,6 @@ layout_mode = 2
 text = "NO!"
 
 [node name="Drink Menu" type="CanvasLayer" parent="." unique_id=1393146838]
-visible = false
 
 [node name="Control" type="Control" parent="Drink Menu" unique_id=1211320975]
 layout_mode = 3
@@ -537,7 +535,6 @@ ignore_texture_size = true
 stretch_mode = 6
 
 [node name="Target Menu" type="CanvasLayer" parent="." unique_id=1541135499]
-visible = false
 
 [node name="Control" type="Control" parent="Target Menu" unique_id=1878676991]
 custom_minimum_size = Vector2(700, 400)
@@ -617,7 +614,6 @@ layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxEmpty_7025r")
 
 [node name="Final Menu" type="CanvasLayer" parent="." unique_id=856374487]
-visible = false
 
 [node name="Control" type="Control" parent="Final Menu" unique_id=660241745]
 layout_mode = 3
@@ -671,7 +667,6 @@ layout_mode = 2
 text = "NO!"
 
 [node name="Game Result" type="CanvasLayer" parent="." unique_id=155840623]
-visible = false
 
 [node name="Control" type="Control" parent="Game Result" unique_id=377092502]
 layout_mode = 3
