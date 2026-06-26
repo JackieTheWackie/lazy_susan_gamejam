@@ -5,7 +5,6 @@
 [ext_resource type="Texture2D" uid="uid://dqn0cm6hbgp7l" path="res://assets/sprites/targets/Target_1-4.png" id="2_nepv3"]
 [ext_resource type="Texture2D" uid="uid://cj56xowdgwxdk" path="res://assets/sprites/drinks/Table.png" id="3_37s47"]
 [ext_resource type="Texture2D" uid="uid://bhs0oaccc6pl5" path="res://assets/sprites/targets/Target_1-5.png" id="3_7025r"]
-[ext_resource type="Texture2D" uid="uid://chdlhphi2bxg" path="res://assets/sprites/drinks/SpriteSheet.png" id="3_ir15t"]
 [ext_resource type="Script" uid="uid://spfhfr2vo27j" path="res://scripts/menus/confirmation_menu.gd" id="3_lnu2h"]
 [ext_resource type="Script" uid="uid://btea14wxvfbs2" path="res://scripts/gameplay/lazy_susan.gd" id="4_iywne"]
 [ext_resource type="Texture2D" uid="uid://bp7y7bhwr3ib0" path="res://assets/sprites/targets/Target_1-1.png" id="4_m4url"]
@@ -30,15 +29,23 @@
 [ext_resource type="Script" uid="uid://b0mfrtif7ynxr" path="res://scripts/menus/game_result.gd" id="16_ssvqc"]
 [ext_resource type="Texture2D" uid="uid://b0tetluulxpbi" path="res://assets/sprites/hints/Phone-off.png" id="18_5newe"]
 [ext_resource type="Texture2D" uid="uid://b5016hyhj36xv" path="res://assets/sprites/hints/Phone-on.png" id="19_37s47"]
+[ext_resource type="Texture2D" uid="uid://tyuytjxsc613" path="res://assets/sprites/drinks/Lazy-Susan Frames/Frame1.png" id="19_66xif"]
 [ext_resource type="AudioStream" uid="uid://cqhlt7b8ks813" path="res://assets/sounds/lazy susan sound v2.mp3" id="20_8qswn"]
+[ext_resource type="Texture2D" uid="uid://nyg7yojo5g5i" path="res://assets/sprites/drinks/Lazy-Susan Frames/Frame2.png" id="20_bnuda"]
+[ext_resource type="Texture2D" uid="uid://x5hhmi3uw5u2" path="res://assets/sprites/drinks/Lazy-Susan Frames/Frame3.png" id="21_0rmfi"]
 [ext_resource type="Texture2D" uid="uid://b4vmk2teyd4bs" path="res://assets/sprites/drinks/drink_1.png" id="22_fedci"]
 [ext_resource type="Texture2D" uid="uid://cjjmus6st6fbc" path="res://assets/sprites/drinks/Poison-Icons/Drink_1_poison.png" id="22_oaba0"]
+[ext_resource type="Texture2D" uid="uid://bocg4jhywrrap" path="res://assets/sprites/drinks/Lazy-Susan Frames/Frame4.png" id="22_xbak0"]
+[ext_resource type="Texture2D" uid="uid://dhhqeav8vwld2" path="res://assets/sprites/drinks/Lazy-Susan Frames/Frame5.png" id="23_3x28f"]
 [ext_resource type="Texture2D" uid="uid://d2dm358g87ero" path="res://assets/sprites/drinks/Poison-Icons/Drink_2_poison.png" id="23_458eo"]
 [ext_resource type="Texture2D" uid="uid://bro2kdkr48dmf" path="res://assets/sprites/hints/Arm.png" id="23_e1j6l"]
 [ext_resource type="Texture2D" uid="uid://3637k6an6mk1" path="res://assets/sprites/drinks/drink_2.png" id="24_8qswn"]
+[ext_resource type="Texture2D" uid="uid://dcfuxrvfdee7u" path="res://assets/sprites/drinks/Lazy-Susan Frames/Frame6.png" id="24_l6q63"]
 [ext_resource type="FontFile" uid="uid://cif71sfcwaqe4" path="res://assets/fonts/Marker SD.ttf" id="24_pl11u"]
 [ext_resource type="Texture2D" uid="uid://x0q1pwu06y8p" path="res://assets/sprites/drinks/Poison-Icons/Drink_3_poison.png" id="25_h3rex"]
+[ext_resource type="Texture2D" uid="uid://b7n8ydfqj4fle" path="res://assets/sprites/drinks/Lazy-Susan Frames/Frame7.png" id="25_mmvbu"]
 [ext_resource type="Texture2D" uid="uid://cht7xkd1nmjns" path="res://assets/sprites/drinks/Poison-Icons/Drink_4_poison.png" id="26_fedci"]
+[ext_resource type="Texture2D" uid="uid://dklwyxqbgp6md" path="res://assets/sprites/drinks/Lazy-Susan Frames/Frame8.png" id="26_weeiq"]
 [ext_resource type="Texture2D" uid="uid://6a4bttp3de2t" path="res://assets/sprites/drinks/Poison-Icons/Drink_5_poison.png" id="27_8qswn"]
 [ext_resource type="AudioStream" uid="uid://dn56p51s38a5i" path="res://assets/sounds/phone_buzz.wav" id="27_wljb1"]
 [ext_resource type="Texture2D" uid="uid://4q67pd72gspq" path="res://assets/sprites/drinks/drink_4.png" id="28_rm0al"]
@@ -205,64 +212,32 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_bt5mj"]
-atlas = ExtResource("3_ir15t")
-region = Rect2(0, 0, 1411, 721)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_e1j6l"]
-atlas = ExtResource("3_ir15t")
-region = Rect2(1411, 0, 1411, 721)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_pl11u"]
-atlas = ExtResource("3_ir15t")
-region = Rect2(0, 721, 1411, 721)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_bhx41"]
-atlas = ExtResource("3_ir15t")
-region = Rect2(1411, 721, 1411, 721)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_qnb83"]
-atlas = ExtResource("3_ir15t")
-region = Rect2(0, 1442, 1411, 721)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_sww3w"]
-atlas = ExtResource("3_ir15t")
-region = Rect2(1411, 1442, 1411, 721)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_suyxu"]
-atlas = ExtResource("3_ir15t")
-region = Rect2(0, 2163, 1411, 721)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_sgl2t"]
-atlas = ExtResource("3_ir15t")
-region = Rect2(1411, 2163, 1411, 721)
-
 [sub_resource type="SpriteFrames" id="SpriteFrames_qouja"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_bt5mj")
+"texture": ExtResource("19_66xif")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_e1j6l")
+"texture": ExtResource("20_bnuda")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_pl11u")
+"texture": ExtResource("21_0rmfi")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_bhx41")
+"texture": ExtResource("22_xbak0")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_qnb83")
+"texture": ExtResource("23_3x28f")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_sww3w")
+"texture": ExtResource("24_l6q63")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_suyxu")
+"texture": ExtResource("25_mmvbu")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_sgl2t")
+"texture": ExtResource("26_weeiq")
 }],
 "loop": true,
 "name": &"default",
@@ -395,7 +370,7 @@ frame = 1
 frame_progress = 0.9332032
 
 [node name="Table" type="Sprite2D" parent="." unique_id=983845003]
-position = Vector2(2, 291)
+position = Vector2(2, 272)
 scale = Vector2(1.0480173, 0.7524851)
 texture = ExtResource("3_37s47")
 
@@ -403,9 +378,11 @@ texture = ExtResource("3_37s47")
 script = ExtResource("4_iywne")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Lazy Susan" unique_id=438128403]
-position = Vector2(0, 164)
-scale = Vector2(0.4, 0.407)
+position = Vector2(-7.6293945e-06, 166.00002)
+scale = Vector2(0.5651425, 0.5750324)
 sprite_frames = SubResource("SpriteFrames_qouja")
+frame = 7
+frame_progress = 0.93354803
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Lazy Susan" unique_id=2066615654]
 position = Vector2(-2.5, -17.5)
