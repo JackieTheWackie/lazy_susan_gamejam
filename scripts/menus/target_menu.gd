@@ -3,6 +3,7 @@ extends Control
 @onready var target_1: TextureButton = $PanelContainer/VBoxContainer/HBoxContainer/target_1
 @onready var target_2: TextureButton = $PanelContainer/VBoxContainer/HBoxContainer/target_2
 @onready var target_3: TextureButton = $PanelContainer/VBoxContainer/HBoxContainer/target_3
+@onready var game_result: Control = $"../../Game Result/Control"
 
 @onready var final_menu: Control = $"../../Final Menu/Control"
 
@@ -22,4 +23,4 @@ func target_check(target_number: int) -> void:
 		
 	GameManager.selected_target = target_number
 	hide()
-	final_menu.show()
+	game_result.show()

@@ -244,6 +244,8 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_66xif"]
+
 [sub_resource type="LabelSettings" id="LabelSettings_lbhrr"]
 font_size = 32
 
@@ -393,44 +395,71 @@ volume_db = 14.596
 
 [node name="Control" type="Control" parent="Confirmation Menu" unique_id=1373373198]
 layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 250.0
-offset_top = 74.0
-offset_right = -629.0
-offset_bottom = 47.0
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("3_lnu2h")
 
 [node name="ColorRect" type="ColorRect" parent="Confirmation Menu/Control" unique_id=263423499]
-layout_mode = 0
-offset_right = 722.0
-offset_bottom = 499.0
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -361.0
+offset_top = -173.0
+offset_right = 361.0
+offset_bottom = 174.0
+grow_horizontal = 2
+grow_vertical = 2
 color = Color(0.37712613, 0.38772944, 0.3922603, 1)
 
 [node name="PanelContainer" type="PanelContainer" parent="Confirmation Menu/Control" unique_id=1266503172]
-layout_mode = 0
-offset_right = 724.0
-offset_bottom = 502.0
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -362.0
+offset_top = -173.5
+offset_right = 362.0
+offset_bottom = 173.5
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Confirmation Menu/Control/PanelContainer" unique_id=687459504]
 layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="Panel" type="Panel" parent="Confirmation Menu/Control/PanelContainer/VBoxContainer" unique_id=1035076848]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_66xif")
 
 [node name="Title" type="Label" parent="Confirmation Menu/Control/PanelContainer/VBoxContainer" unique_id=2147457011]
+custom_minimum_size = Vector2(0, 60)
 layout_mode = 2
-text = "Are you ready?"
+text = "Are you ready to choose?"
 label_settings = SubResource("LabelSettings_lbhrr")
 horizontal_alignment = 1
 
 [node name="Yes" type="Button" parent="Confirmation Menu/Control/PanelContainer/VBoxContainer" unique_id=127862258]
+custom_minimum_size = Vector2(500, 100)
 layout_mode = 2
-text = "YES!"
+size_flags_horizontal = 4
+text = "Yeah, I got this!"
 
 [node name="No" type="Button" parent="Confirmation Menu/Control/PanelContainer/VBoxContainer" unique_id=1412264491]
+custom_minimum_size = Vector2(500, 100)
 layout_mode = 2
-text = "NO!"
+size_flags_horizontal = 4
+text = "Not yet..."
 
 [node name="Drink Menu" type="CanvasLayer" parent="." unique_id=1393146838]
 
@@ -472,6 +501,7 @@ layout_mode = 2
 alignment = 1
 
 [node name="1" type="TextureButton" parent="Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContainer" unique_id=1115944873]
+unique_name_in_owner = true
 custom_minimum_size = Vector2(175, 220)
 layout_mode = 2
 texture_normal = ExtResource("22_fedci")
@@ -480,6 +510,7 @@ ignore_texture_size = true
 stretch_mode = 6
 
 [node name="2" type="TextureButton" parent="Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContainer" unique_id=1234894407]
+unique_name_in_owner = true
 custom_minimum_size = Vector2(175, 220)
 layout_mode = 2
 texture_normal = ExtResource("24_8qswn")
@@ -488,6 +519,7 @@ ignore_texture_size = true
 stretch_mode = 6
 
 [node name="3" type="TextureButton" parent="Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContainer" unique_id=1869311525]
+unique_name_in_owner = true
 custom_minimum_size = Vector2(175, 220)
 layout_mode = 2
 texture_normal = ExtResource("8_rysoc")
@@ -496,6 +528,7 @@ ignore_texture_size = true
 stretch_mode = 6
 
 [node name="4" type="TextureButton" parent="Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContainer" unique_id=860856202]
+unique_name_in_owner = true
 custom_minimum_size = Vector2(175, 220)
 layout_mode = 2
 texture_normal = ExtResource("28_rm0al")
@@ -508,6 +541,7 @@ layout_mode = 2
 alignment = 1
 
 [node name="5" type="TextureButton" parent="Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContainer2" unique_id=921827423]
+unique_name_in_owner = true
 custom_minimum_size = Vector2(175, 220)
 layout_mode = 2
 texture_normal = SubResource("CompressedTexture2D_7ixpq")
@@ -516,6 +550,7 @@ ignore_texture_size = true
 stretch_mode = 6
 
 [node name="6" type="TextureButton" parent="Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContainer2" unique_id=1194769638]
+unique_name_in_owner = true
 custom_minimum_size = Vector2(175, 220)
 layout_mode = 2
 texture_normal = ExtResource("11_1kice")
@@ -524,6 +559,7 @@ ignore_texture_size = true
 stretch_mode = 6
 
 [node name="7" type="TextureButton" parent="Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContainer2" unique_id=75432379]
+unique_name_in_owner = true
 custom_minimum_size = Vector2(175, 220)
 layout_mode = 2
 texture_normal = SubResource("CompressedTexture2D_bk1p3")
@@ -532,6 +568,7 @@ ignore_texture_size = true
 stretch_mode = 6
 
 [node name="8" type="TextureButton" parent="Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContainer2" unique_id=1842970401]
+unique_name_in_owner = true
 custom_minimum_size = Vector2(175, 220)
 layout_mode = 2
 texture_normal = ExtResource("13_37s47")
@@ -619,6 +656,7 @@ layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxEmpty_7025r")
 
 [node name="Final Menu" type="CanvasLayer" parent="." unique_id=856374487]
+visible = false
 
 [node name="Control" type="Control" parent="Final Menu" unique_id=660241745]
 layout_mode = 3
