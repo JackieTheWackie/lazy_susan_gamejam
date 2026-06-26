@@ -381,8 +381,6 @@ script = ExtResource("4_iywne")
 position = Vector2(-7.6293945e-06, 166.00002)
 scale = Vector2(0.5651425, 0.5750324)
 sprite_frames = SubResource("SpriteFrames_qouja")
-frame = 7
-frame_progress = 0.93354803
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Lazy Susan" unique_id=2066615654]
 position = Vector2(-2.5, -17.5)
