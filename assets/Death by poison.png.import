@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bq86q1c3c3xst"
-path="res://.godot/imported/Target a-3.png-addd27f42e93aa14ac934ceafce7871f.ctex"
+uid="uid://dntr3vhmcguyc"
+path="res://.godot/imported/Death by poison.png-e2039d0077d0cc21e835cf81f4edad28.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Targets/Target a-3.png"
-dest_files=["res://.godot/imported/Target a-3.png-addd27f42e93aa14ac934ceafce7871f.ctex"]
+source_file="res://assets/Death by poison.png"
+dest_files=["res://.godot/imported/Death by poison.png-e2039d0077d0cc21e835cf81f4edad28.ctex"]
 
 [params]
 

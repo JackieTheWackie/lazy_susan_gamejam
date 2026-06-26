@@ -11,22 +11,16 @@
 [ext_resource type="Texture2D" uid="uid://bp7y7bhwr3ib0" path="res://assets/Target_Sprites/Target_1-1.png" id="4_m4url"]
 [ext_resource type="Texture2D" uid="uid://c8cqmb5nxcosm" path="res://assets/Target_Sprites/Target_1-3.png" id="5_8ool0"]
 [ext_resource type="Script" uid="uid://ufjs54iamur6" path="res://scripts/menus/drink_menu.gd" id="5_iywne"]
-[ext_resource type="Texture2D" uid="uid://2hw2fbuujkg1" path="res://assets/drinks/drink_1.png" id="6_ir15t"]
 [ext_resource type="Script" uid="uid://pbot1780v53o" path="res://scripts/menus/target_menu.gd" id="6_p57ef"]
 [ext_resource type="Texture2D" uid="uid://dxo84281cvprg" path="res://assets/Target_Sprites/Target_1-2.png" id="6_pr1ej"]
 [ext_resource type="Texture2D" uid="uid://bxt86pf6h8jrn" path="res://assets/Target_Sprites/Target_2-4.png" id="7_05nbr"]
-[ext_resource type="Texture2D" uid="uid://2yuvqwkkhfsw" path="res://assets/drinks/drink_2.png" id="7_ca42v"]
 [ext_resource type="Script" uid="uid://siea14effeq5" path="res://scripts/menus/final_menu.gd" id="7_u5sy4"]
-[ext_resource type="Texture2D" uid="uid://mb45f64yeg1o" path="res://assets/Target_Sprites/Target_2-5.png" id="8_0sl42"]
-[ext_resource type="Texture2D" uid="uid://ckwy7uv5d7jv3" path="res://assets/drinks/drink_3.png" id="8_rysoc"]
+[ext_resource type="Texture2D" uid="uid://ckwy7uv5d7jv3" path="res://assets/drinks/Drink_3.png" id="8_rysoc"]
 [ext_resource type="Texture2D" uid="uid://2xe6ymw0ooe2" path="res://assets/Target_Sprites/Target_2-1.png" id="9_oaba0"]
-[ext_resource type="Texture2D" uid="uid://dt8u2qdt08jw4" path="res://assets/drinks/drink_4.png" id="9_ssvqc"]
-[ext_resource type="Texture2D" uid="uid://c7a3855g714aa" path="res://assets/drinks/Drink_5.png" id="10_264po"]
 [ext_resource type="Texture2D" uid="uid://db0dqdq61xouc" path="res://assets/Target_Sprites/Target_2-3.png" id="10_458eo"]
 [ext_resource type="Texture2D" uid="uid://br0jy4brl35ma" path="res://assets/drinks/Drink_6.png" id="11_1kice"]
 [ext_resource type="Script" uid="uid://dd1cvf04wu7is" path="res://scripts/on_screen_text/timer.gd" id="11_dinhu"]
 [ext_resource type="Texture2D" uid="uid://be8pdqwpswk7b" path="res://assets/Target_Sprites/Target_2-2.png" id="11_h3rex"]
-[ext_resource type="Texture2D" uid="uid://dr1i322246nmr" path="res://assets/drinks/Drink_7.png" id="12_5newe"]
 [ext_resource type="Texture2D" uid="uid://cxsll5atavdw7" path="res://assets/Target_Sprites/Target_3-4.png" id="12_fedci"]
 [ext_resource type="Script" uid="uid://deaai2bhdeei8" path="res://scripts/on_screen_text/phone_call.gd" id="12_kvuet"]
 [ext_resource type="Texture2D" uid="uid://upsd5ktnkqls" path="res://assets/Target_Sprites/Target_3-5.png" id="13_8qswn"]
@@ -37,12 +31,29 @@
 [ext_resource type="Script" uid="uid://b0mfrtif7ynxr" path="res://scripts/menus/game_result.gd" id="16_ssvqc"]
 [ext_resource type="Texture2D" uid="uid://b0tetluulxpbi" path="res://assets/Phone-off.png" id="18_5newe"]
 [ext_resource type="Texture2D" uid="uid://b5016hyhj36xv" path="res://assets/Phone-on.png" id="19_37s47"]
+[ext_resource type="AudioStream" uid="uid://cqhlt7b8ks813" path="res://assets/sounds/lazy susan sound v2.mp3" id="20_8qswn"]
+[ext_resource type="Texture2D" uid="uid://b4vmk2teyd4bs" path="res://assets/drinks/Drink_1.png" id="22_fedci"]
+[ext_resource type="Texture2D" uid="uid://cjjmus6st6fbc" path="res://assets/drinks/Poison-Icons/Drink_1_poison.png" id="22_oaba0"]
+[ext_resource type="Texture2D" uid="uid://d2dm358g87ero" path="res://assets/drinks/Poison-Icons/Drink_2_poison.png" id="23_458eo"]
 [ext_resource type="Texture2D" uid="uid://bro2kdkr48dmf" path="res://assets/Arm.png" id="23_e1j6l"]
+[ext_resource type="Texture2D" uid="uid://3637k6an6mk1" path="res://assets/drinks/Drink_2.png" id="24_8qswn"]
 [ext_resource type="FontFile" uid="uid://cif71sfcwaqe4" path="res://assets/fonts/Marker SD.ttf" id="24_pl11u"]
+[ext_resource type="Texture2D" uid="uid://x0q1pwu06y8p" path="res://assets/drinks/Poison-Icons/Drink_3_poison.png" id="25_h3rex"]
+[ext_resource type="Texture2D" uid="uid://cht7xkd1nmjns" path="res://assets/drinks/Poison-Icons/Drink_4_poison.png" id="26_fedci"]
+[ext_resource type="Texture2D" uid="uid://6a4bttp3de2t" path="res://assets/drinks/Poison-Icons/Drink_5_poison.png" id="27_8qswn"]
 [ext_resource type="AudioStream" uid="uid://dn56p51s38a5i" path="res://assets/sounds/phone_buzz.wav" id="27_wljb1"]
+[ext_resource type="Texture2D" uid="uid://4q67pd72gspq" path="res://assets/drinks/Drink_4.png" id="28_rm0al"]
+[ext_resource type="Texture2D" uid="uid://ge37qr8xfh5x" path="res://assets/drinks/Poison-Icons/Drink_6_poison.png" id="29_rm0al"]
+[ext_resource type="Texture2D" uid="uid://c8gvkv3gfynbi" path="res://assets/drinks/Poison-Icons/Drink_7_poison.png" id="30_i4re6"]
 [ext_resource type="AudioStream" uid="uid://cs04vjreqeb4k" path="res://assets/sounds/background-music.mp3" id="30_sgl2t"]
 [ext_resource type="AudioStream" uid="uid://dvllbeu62dlcw" path="res://assets/sounds/waiter_ahem.wav" id="30_v2yb1"]
 [ext_resource type="AudioStream" uid="uid://bjvu1xxf4igni" path="res://assets/sounds/background-noise.wav" id="31_qouja"]
+[ext_resource type="Texture2D" uid="uid://c2g6tiwuu57rq" path="res://assets/drinks/Poison-Icons/Drink_8_poison.png" id="32_pf7vy"]
+[ext_resource type="Texture2D" uid="uid://dys87s0e2e3rc" path="res://assets/Cheers.png" id="40_pf7vy"]
+[ext_resource type="Texture2D" uid="uid://dtsha43hu4mon" path="res://assets/Gun.png" id="41_o8ni1"]
+[ext_resource type="Texture2D" uid="uid://dntr3vhmcguyc" path="res://assets/Death by poison.png" id="42_3hbvx"]
+[ext_resource type="Texture2D" uid="uid://ti27374mcvl3" path="res://assets/Bubble.png" id="43_o8ni1"]
+[ext_resource type="AudioStream" uid="uid://dl045auejvqfa" path="res://assets/cheers.mp3" id="44_3hbvx"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_o8ni1"]
 animations = [{
@@ -92,6 +103,9 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_o8ni1"]
+load_path = "res://.godot/imported/Target_2-5.png-2cf74e91a9c648871483b664d83a553b.ctex"
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_3hbvx"]
 animations = [{
 "frames": [{
@@ -99,13 +113,13 @@ animations = [{
 "texture": ExtResource("7_05nbr")
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_0sl42")
+"texture": SubResource("CompressedTexture2D_o8ni1")
 }, {
 "duration": 1.0,
 "texture": ExtResource("7_05nbr")
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_0sl42")
+"texture": SubResource("CompressedTexture2D_o8ni1")
 }],
 "loop": true,
 "name": &"Laughing",
@@ -258,10 +272,41 @@ animations = [{
 [sub_resource type="LabelSettings" id="LabelSettings_lbhrr"]
 font_size = 32
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_7ixpq"]
+load_path = "res://.godot/imported/Drink_5.png-c86f2abb0ad2f5b01833dd77ee78f45a.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_bk1p3"]
+load_path = "res://.godot/imported/Drink_7.png-de2644ccd40be3b921d46f08b02783d9.ctex"
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nepv3"]
 bg_color = Color(0.18260717, 0.18260717, 0.18260717, 1)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7025r"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ms3bu"]
+animations = [{
+"frames": [{
+"duration": 6.0,
+"texture": ExtResource("40_pf7vy")
+}, {
+"duration": 30.0,
+"texture": ExtResource("41_o8ni1")
+}],
+"loop": false,
+"name": &"Lose",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 6.0,
+"texture": ExtResource("40_pf7vy")
+}, {
+"duration": 30.0,
+"texture": ExtResource("42_3hbvx")
+}],
+"loop": false,
+"name": &"Win",
+"speed": 5.0
+}]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_5newe"]
 animations = [{
@@ -331,7 +376,7 @@ scale = Vector2(0.75, 0.75)
 script = ExtResource("2_7025r")
 
 [node name="Target 1" type="AnimatedSprite2D" parent="Targets" unique_id=1180621875]
-position = Vector2(-1080, 12.000008)
+position = Vector2(-1074.6666, 33.333332)
 sprite_frames = SubResource("SpriteFrames_o8ni1")
 animation = &"Talking"
 frame_progress = 0.20794192
@@ -364,6 +409,10 @@ sprite_frames = SubResource("SpriteFrames_qouja")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Lazy Susan" unique_id=2066615654]
 position = Vector2(-2.5, -17.5)
+
+[node name="susan" type="AudioStreamPlayer2D" parent="Lazy Susan" unique_id=1934699486]
+stream = ExtResource("20_8qswn")
+volume_db = 14.596
 
 [node name="Confirmation Menu" type="CanvasLayer" parent="." unique_id=836725415]
 
@@ -450,14 +499,16 @@ alignment = 1
 [node name="1" type="TextureButton" parent="Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContainer" unique_id=1115944873]
 custom_minimum_size = Vector2(175, 220)
 layout_mode = 2
-texture_normal = ExtResource("6_ir15t")
+texture_normal = ExtResource("22_fedci")
+texture_hover = ExtResource("22_oaba0")
 ignore_texture_size = true
 stretch_mode = 6
 
 [node name="2" type="TextureButton" parent="Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContainer" unique_id=1234894407]
 custom_minimum_size = Vector2(175, 220)
 layout_mode = 2
-texture_normal = ExtResource("7_ca42v")
+texture_normal = ExtResource("24_8qswn")
+texture_hover = ExtResource("23_458eo")
 ignore_texture_size = true
 stretch_mode = 6
 
@@ -465,13 +516,15 @@ stretch_mode = 6
 custom_minimum_size = Vector2(175, 220)
 layout_mode = 2
 texture_normal = ExtResource("8_rysoc")
+texture_hover = ExtResource("25_h3rex")
 ignore_texture_size = true
 stretch_mode = 6
 
 [node name="4" type="TextureButton" parent="Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContainer" unique_id=860856202]
 custom_minimum_size = Vector2(175, 220)
 layout_mode = 2
-texture_normal = ExtResource("9_ssvqc")
+texture_normal = ExtResource("28_rm0al")
+texture_hover = ExtResource("26_fedci")
 ignore_texture_size = true
 stretch_mode = 6
 
@@ -482,7 +535,8 @@ alignment = 1
 [node name="5" type="TextureButton" parent="Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContainer2" unique_id=921827423]
 custom_minimum_size = Vector2(175, 220)
 layout_mode = 2
-texture_normal = ExtResource("10_264po")
+texture_normal = SubResource("CompressedTexture2D_7ixpq")
+texture_hover = ExtResource("27_8qswn")
 ignore_texture_size = true
 stretch_mode = 6
 
@@ -490,13 +544,15 @@ stretch_mode = 6
 custom_minimum_size = Vector2(175, 220)
 layout_mode = 2
 texture_normal = ExtResource("11_1kice")
+texture_hover = ExtResource("29_rm0al")
 ignore_texture_size = true
 stretch_mode = 6
 
 [node name="7" type="TextureButton" parent="Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContainer2" unique_id=75432379]
 custom_minimum_size = Vector2(175, 220)
 layout_mode = 2
-texture_normal = ExtResource("12_5newe")
+texture_normal = SubResource("CompressedTexture2D_bk1p3")
+texture_hover = ExtResource("30_i4re6")
 ignore_texture_size = true
 stretch_mode = 6
 
@@ -504,6 +560,7 @@ stretch_mode = 6
 custom_minimum_size = Vector2(175, 220)
 layout_mode = 2
 texture_normal = ExtResource("13_37s47")
+texture_hover = ExtResource("32_pf7vy")
 ignore_texture_size = true
 stretch_mode = 6
 
@@ -569,7 +626,7 @@ stretch_mode = 6
 custom_minimum_size = Vector2(200, 400)
 layout_mode = 2
 texture_normal = ExtResource("9_oaba0")
-texture_hover = ExtResource("8_0sl42")
+texture_hover = SubResource("CompressedTexture2D_o8ni1")
 ignore_texture_size = true
 stretch_mode = 6
 
@@ -673,6 +730,75 @@ layout_mode = 2
 label_settings = SubResource("LabelSettings_lbhrr")
 horizontal_alignment = 1
 
+[node name="endings" type="AnimatedSprite2D" parent="Game Result/Control/PanelContainer/VBoxContainer" unique_id=17872452]
+position = Vector2(360.22217, 286.24997)
+scale = Vector2(0.3717592, 0.37175924)
+sprite_frames = SubResource("SpriteFrames_ms3bu")
+animation = &"Lose"
+
+[node name="Lose-Text" type="Node2D" parent="Game Result/Control/PanelContainer/VBoxContainer" unique_id=2011086204]
+
+[node name="Bubble2" type="Sprite2D" parent="Game Result/Control/PanelContainer/VBoxContainer/Lose-Text" unique_id=645514129]
+position = Vector2(561, 416.00003)
+scale = Vector2(0.46265557, 0.4626556)
+texture = ExtResource("43_o8ni1")
+
+[node name="Label" type="Label" parent="Game Result/Control/PanelContainer/VBoxContainer/Lose-Text/Bubble2" unique_id=866800012]
+offset_left = -259.37222
+offset_top = -21.61435
+offset_right = 253.62778
+offset_bottom = 33.38565
+theme_override_colors/font_color = Color(0.23921569, 0.23921569, 0.23921569, 1)
+theme_override_font_sizes/font_size = 40
+text = "...and now they found you."
+
+[node name="Bubble" type="Sprite2D" parent="Game Result/Control/PanelContainer/VBoxContainer/Lose-Text" unique_id=1568594609]
+position = Vector2(188, 175)
+scale = Vector2(0.46265557, 0.4626556)
+texture = ExtResource("43_o8ni1")
+
+[node name="Label" type="Label" parent="Game Result/Control/PanelContainer/VBoxContainer/Lose-Text/Bubble" unique_id=2145815737]
+offset_left = -237.75787
+offset_top = -21.61435
+offset_right = 243.24213
+offset_bottom = 33.38565
+theme_override_colors/font_color = Color(0.23921569, 0.23921569, 0.23921569, 1)
+theme_override_font_sizes/font_size = 40
+text = "You missed your target..."
+
+[node name="Win-Text" type="Node2D" parent="Game Result/Control/PanelContainer/VBoxContainer" unique_id=947798364]
+
+[node name="Bubble2" type="Sprite2D" parent="Game Result/Control/PanelContainer/VBoxContainer/Win-Text" unique_id=1036060442]
+position = Vector2(561, 416.00003)
+scale = Vector2(0.46265557, 0.4626556)
+texture = ExtResource("43_o8ni1")
+
+[node name="Label" type="Label" parent="Game Result/Control/PanelContainer/VBoxContainer/Win-Text/Bubble2" unique_id=1917018558]
+offset_left = -162.10764
+offset_top = -21.614416
+offset_right = 135.89236
+offset_bottom = 33.385582
+theme_override_colors/font_color = Color(0.23921569, 0.23921569, 0.23921569, 1)
+theme_override_font_sizes/font_size = 40
+text = "Excellent Work."
+
+[node name="Bubble" type="Sprite2D" parent="Game Result/Control/PanelContainer/VBoxContainer/Win-Text" unique_id=443063441]
+position = Vector2(188, 175)
+scale = Vector2(0.46265557, 0.4626556)
+texture = ExtResource("43_o8ni1")
+
+[node name="Label" type="Label" parent="Game Result/Control/PanelContainer/VBoxContainer/Win-Text/Bubble" unique_id=27836060]
+offset_left = -190.2063
+offset_top = -21.61435
+offset_right = 183.7937
+offset_bottom = 33.38565
+theme_override_colors/font_color = Color(0.23921569, 0.23921569, 0.23921569, 1)
+theme_override_font_sizes/font_size = 40
+text = "Target Eliminated..."
+
+[node name="Cheers" type="AudioStreamPlayer2D" parent="Game Result/Control" unique_id=98082857]
+stream = ExtResource("44_3hbvx")
+
 [node name="Phone Call" type="Node" parent="." unique_id=228923896]
 
 [node name="Phone Sprite" type="AnimatedSprite2D" parent="Phone Call" unique_id=1835425870]
@@ -734,10 +860,12 @@ stream = ExtResource("30_v2yb1")
 script = ExtResource("11_dinhu")
 
 [node name="Label" type="Label" parent="Timer" unique_id=444015267]
-offset_left = 446.0
-offset_top = -320.0
-offset_right = 571.0
-offset_bottom = -261.0
+offset_left = 473.0
+offset_top = -318.0
+offset_right = 598.0
+offset_bottom = -259.0
+horizontal_alignment = 1
+vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="Timer" type="Timer" parent="Timer" unique_id=2095725279]
@@ -754,5 +882,21 @@ autoplay = true
 [node name="Background Noise" type="AudioStreamPlayer2D" parent="Node" unique_id=1355647677]
 stream = ExtResource("31_qouja")
 autoplay = true
+
+[node name="Label" type="Label" parent="." unique_id=1384342171]
+offset_left = 53.0
+offset_top = 286.0
+offset_right = 574.0
+offset_bottom = 344.0
+text = "Use ArrowKeys to SPIN the Lazy-Susan to see each drink. "
+autowrap_mode = 2
+
+[node name="Label2" type="Label" parent="." unique_id=518260905]
+offset_left = -562.0
+offset_top = -306.0
+offset_right = -19.0
+offset_bottom = -231.0
+text = "Hit Escape to make your choice early or wait for the timer to run out."
+autowrap_mode = 2
 
 [connection signal="pressed" from="Target Menu/Control/PanelContainer/VBoxContainer/HBoxContainer/target_1" to="Target Menu/Control" method="_on_npc_1_pressed"]

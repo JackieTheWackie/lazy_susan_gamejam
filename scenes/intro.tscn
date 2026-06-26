@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://dahydm7dvrye5" path="res://assets/VerySerious-SpyBoss.png" id="1_ioskq"]
 [ext_resource type="Script" uid="uid://s5l8412ogtv5" path="res://scripts/intro.gd" id="2_4bx60"]
 [ext_resource type="Texture2D" uid="uid://ti27374mcvl3" path="res://assets/Bubble.png" id="3_i2l1n"]
+[ext_resource type="AudioStream" uid="uid://br8w1vd8n5uda" path="res://assets/sounds/TITLE MUSIC.mp3" id="4_i2l1n"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wfs7u"]
 texture = ExtResource("3_i2l1n")
@@ -26,6 +27,7 @@ theme_override_font_sizes/font_size = 20
 text = "Start Game >"
 
 [node name="Intro1" type="Control" parent="CanvasLayer" unique_id=900420632]
+visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
@@ -76,12 +78,14 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Intro2" type="Control" parent="CanvasLayer" unique_id=493356628]
+visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="Party" type="PanelContainer" parent="CanvasLayer/Intro2" unique_id=888271770]
+visible = false
 custom_minimum_size = Vector2(620, 240)
 layout_mode = 1
 anchors_preset = 4
@@ -110,10 +114,10 @@ layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
-offset_left = 78.0
-offset_top = 289.0
-offset_right = 698.0
-offset_bottom = 529.0
+offset_left = 2.000001
+offset_top = 39.999996
+offset_right = 622.0
+offset_bottom = 280.0
 grow_vertical = 2
 scale = Vector2(0.8, 0.8)
 theme_override_styles/panel = SubResource("StyleBoxTexture_wfs7u")
@@ -133,10 +137,10 @@ layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
-offset_left = 637.0
-offset_top = 337.0
-offset_right = 1257.0
-offset_bottom = 577.0
+offset_left = 654.0
+offset_top = 341.0
+offset_right = 1274.0
+offset_bottom = 581.0
 grow_vertical = 2
 scale = Vector2(0.8, 0.8)
 theme_override_styles/panel = SubResource("StyleBoxTexture_wfs7u")
@@ -151,6 +155,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Intro3" type="Control" parent="CanvasLayer" unique_id=390118334]
+visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
@@ -162,10 +167,10 @@ layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
-offset_left = 6.0
-offset_top = 172.0
-offset_right = 656.0
-offset_bottom = 412.0
+offset_left = 16.0
+offset_top = -8.0
+offset_right = 666.0
+offset_bottom = 232.0
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_wfs7u")
 
@@ -174,7 +179,30 @@ layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 30
 text = "You must figure out which guest
- is the target based on my description."
+ is your target based on my messages."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Waiter" type="PanelContainer" parent="CanvasLayer/Intro3" unique_id=903938584]
+custom_minimum_size = Vector2(620, 240)
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 644.0
+offset_top = 331.0
+offset_right = 1264.0
+offset_bottom = 571.0
+grow_vertical = 2
+scale = Vector2(0.8, 0.8)
+theme_override_styles/panel = SubResource("StyleBoxTexture_wfs7u")
+
+[node name="Label" type="Label" parent="CanvasLayer/Intro3/Waiter" unique_id=2143955693]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "The waiter will be able
+to bring you messages."
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -195,70 +223,18 @@ theme_override_styles/panel = SubResource("StyleBoxTexture_wfs7u")
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 30
-text = "Then, when its time to order - 
-choose the poisoned drink."
+text = "The waiter will give you 
+details about the poisoned drink."
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Intro4" type="Control" parent="CanvasLayer" unique_id=1994932956]
+[node name="Intro4" type="Control" parent="CanvasLayer" unique_id=185265305]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="Kitchen" type="PanelContainer" parent="CanvasLayer/Intro4" unique_id=1552539820]
-custom_minimum_size = Vector2(620, 240)
-layout_mode = 1
-anchors_preset = 4
-anchor_top = 0.5
-anchor_bottom = 0.5
-offset_left = 12.000061
-offset_top = 165.99998
-offset_right = 632.00006
-offset_bottom = 406.0
-grow_vertical = 2
-scale = Vector2(0.8, 0.8)
-theme_override_styles/panel = SubResource("StyleBoxTexture_wfs7u")
-
-[node name="Label" type="Label" parent="CanvasLayer/Intro4/Kitchen" unique_id=516599288]
-layout_mode = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 40
-text = "An agent in the kitchen 
-will poison the drink."
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Waiter" type="PanelContainer" parent="CanvasLayer/Intro4" unique_id=903938584]
-custom_minimum_size = Vector2(620, 240)
-layout_mode = 1
-anchors_preset = 4
-anchor_top = 0.5
-anchor_bottom = 0.5
-offset_left = 644.0
-offset_top = 331.0
-offset_right = 1264.0
-offset_bottom = 571.0
-grow_vertical = 2
-scale = Vector2(0.8, 0.8)
-theme_override_styles/panel = SubResource("StyleBoxTexture_wfs7u")
-
-[node name="Label" type="Label" parent="CanvasLayer/Intro4/Waiter" unique_id=2143955693]
-layout_mode = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 40
-text = "The waiter will be able
-to bring you messages."
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Intro5" type="Control" parent="CanvasLayer" unique_id=185265305]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="Serious" type="PanelContainer" parent="CanvasLayer/Intro5" unique_id=1905022332]
+[node name="Serious" type="PanelContainer" parent="CanvasLayer/Intro4" unique_id=1905022332]
 custom_minimum_size = Vector2(620, 240)
 layout_mode = 1
 anchors_preset = 4
@@ -272,7 +248,7 @@ grow_vertical = 2
 scale = Vector2(0.8, 0.8)
 theme_override_styles/panel = SubResource("StyleBoxTexture_wfs7u")
 
-[node name="Label" type="Label" parent="CanvasLayer/Intro5/Serious" unique_id=1098904432]
+[node name="Label" type="Label" parent="CanvasLayer/Intro4/Serious" unique_id=1098904432]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 40
@@ -280,7 +256,7 @@ text = "This is a very dangerous job -"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Serious2" type="PanelContainer" parent="CanvasLayer/Intro5" unique_id=1724669596]
+[node name="Serious2" type="PanelContainer" parent="CanvasLayer/Intro4" unique_id=1724669596]
 custom_minimum_size = Vector2(620, 240)
 layout_mode = 1
 anchors_preset = 4
@@ -294,7 +270,7 @@ grow_vertical = 2
 scale = Vector2(0.8, 0.8)
 theme_override_styles/panel = SubResource("StyleBoxTexture_wfs7u")
 
-[node name="Label" type="Label" parent="CanvasLayer/Intro5/Serious2" unique_id=423716945]
+[node name="Label" type="Label" parent="CanvasLayer/Intro4/Serious2" unique_id=423716945]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 40
@@ -303,7 +279,7 @@ this seriously!"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="GoodLuck" type="PanelContainer" parent="CanvasLayer/Intro5" unique_id=624949405]
+[node name="GoodLuck" type="PanelContainer" parent="CanvasLayer/Intro4" unique_id=624949405]
 custom_minimum_size = Vector2(620, 240)
 layout_mode = 1
 anchors_preset = 4
@@ -317,12 +293,16 @@ grow_vertical = 2
 scale = Vector2(0.8, 0.8)
 theme_override_styles/panel = SubResource("StyleBoxTexture_wfs7u")
 
-[node name="Label" type="Label" parent="CanvasLayer/Intro5/GoodLuck" unique_id=2077373391]
+[node name="Label" type="Label" parent="CanvasLayer/Intro4/GoodLuck" unique_id=2077373391]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 40
 text = "Good luck, agent."
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="bg-music" type="AudioStreamPlayer2D" parent="." unique_id=806543482]
+stream = ExtResource("4_i2l1n")
+autoplay = true
 
 [connection signal="pressed" from="CanvasLayer/Start" to="CanvasLayer" method="_on_start_pressed"]

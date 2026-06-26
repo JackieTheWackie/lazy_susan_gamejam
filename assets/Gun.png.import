@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://q5p862fv7fa5"
-path="res://.godot/imported/target_3.png-83b5a19365b8f702da210462344d95da.ctex"
+uid="uid://dtsha43hu4mon"
+path="res://.godot/imported/Gun.png-2467f5f596c30c57f93a8cb1c0762afa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Targets/target_3.png"
-dest_files=["res://.godot/imported/target_3.png-83b5a19365b8f702da210462344d95da.ctex"]
+source_file="res://assets/Gun.png"
+dest_files=["res://.godot/imported/Gun.png-2467f5f596c30c57f93a8cb1c0762afa.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://4q67pd72gspq"
-path="res://.godot/imported/Drink_4.png-d90066aed2265ca1bcd727459bd28b0c.ctex"
+uid="uid://cjjmus6st6fbc"
+path="res://.godot/imported/Drink_1_poison.png-b47df6a8e66cefbff3fea5e44945d8cf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/drinks/Drink_4.png"
-dest_files=["res://.godot/imported/Drink_4.png-d90066aed2265ca1bcd727459bd28b0c.ctex"]
+source_file="res://assets/drinks/Poison-Icons/Drink_1_poison.png"
+dest_files=["res://.godot/imported/Drink_1_poison.png-b47df6a8e66cefbff3fea5e44945d8cf.ctex"]
 
 [params]
 
