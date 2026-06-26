@@ -7,8 +7,7 @@ var target_correct: bool = false
 var selected_drink: int = 0
 var selected_target: int = 0
 var decision_time: bool = false
-var drink_list = [$"Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContainer/1", $"Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContainer/2", $"Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContainer/3", $"Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContainer/4",
-				  $"Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContainer2/5", $"Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContainer2/6", $"Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContainer2/7", $"Drink Menu/Control/PanelContainer/VBoxContainer/HBoxContainer2/8"]
+var drink_list = [%"1", %"2", %"3", %"4", %"5", %"6", %"7", %"8"]
 @onready var drink_hints = [
 	{
 		"number": 1,
