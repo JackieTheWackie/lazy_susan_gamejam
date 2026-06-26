@@ -15,10 +15,10 @@ func _ready() -> void:
 
 func _on_visibility_changed():
 	if(GameManager.drink_correct && GameManager.target_correct):
-		result.text = "YOU ARE CORRECT"
+		result.text = "Success"
 		endings.play("Win")
 		win_text.visible = true
 	else:
-		result.text = "YOU ARE WRONG"
+		result.text = "Failure"
 		endings.play("Lose")
 		lose_text.visible = true
