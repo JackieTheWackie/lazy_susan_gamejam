@@ -18,7 +18,6 @@ func pose() -> void:
 	while timer.time_left > 0:
 		
 		await get_tree().create_timer(randi_range(5,10)).timeout
-		print("new pose")
 		target_1.play(rand_animation.pick_random())
 		target_2.play(rand_animation.pick_random())
 		target_3.play(rand_animation.pick_random())

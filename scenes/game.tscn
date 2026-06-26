@@ -49,6 +49,10 @@
 [ext_resource type="AudioStream" uid="uid://dvllbeu62dlcw" path="res://assets/sounds/waiter_ahem.wav" id="30_v2yb1"]
 [ext_resource type="AudioStream" uid="uid://bjvu1xxf4igni" path="res://assets/sounds/background-noise.wav" id="31_qouja"]
 [ext_resource type="Texture2D" uid="uid://c2g6tiwuu57rq" path="res://assets/drinks/Poison-Icons/Drink_8_poison.png" id="32_pf7vy"]
+[ext_resource type="Texture2D" uid="uid://dys87s0e2e3rc" path="res://assets/Cheers.png" id="40_pf7vy"]
+[ext_resource type="Texture2D" uid="uid://dtsha43hu4mon" path="res://assets/Gun.png" id="41_o8ni1"]
+[ext_resource type="Texture2D" uid="uid://dntr3vhmcguyc" path="res://assets/Death by poison.png" id="42_3hbvx"]
+[ext_resource type="Texture2D" uid="uid://ti27374mcvl3" path="res://assets/Bubble.png" id="43_o8ni1"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_o8ni1"]
 animations = [{
@@ -277,6 +281,31 @@ load_path = "res://.godot/imported/Drink_7.png-de2644ccd40be3b921d46f08b02783d9.
 bg_color = Color(0.18260717, 0.18260717, 0.18260717, 1)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7025r"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ms3bu"]
+animations = [{
+"frames": [{
+"duration": 6.0,
+"texture": ExtResource("40_pf7vy")
+}, {
+"duration": 30.0,
+"texture": ExtResource("41_o8ni1")
+}],
+"loop": false,
+"name": &"Lose",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 6.0,
+"texture": ExtResource("40_pf7vy")
+}, {
+"duration": 30.0,
+"texture": ExtResource("42_3hbvx")
+}],
+"loop": false,
+"name": &"Win",
+"speed": 5.0
+}]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_5newe"]
 animations = [{
@@ -699,6 +728,72 @@ layout_mode = 2
 layout_mode = 2
 label_settings = SubResource("LabelSettings_lbhrr")
 horizontal_alignment = 1
+
+[node name="endings" type="AnimatedSprite2D" parent="Game Result/Control/PanelContainer/VBoxContainer" unique_id=17872452]
+position = Vector2(360.22217, 286.24997)
+scale = Vector2(0.3717592, 0.37175924)
+sprite_frames = SubResource("SpriteFrames_ms3bu")
+animation = &"Lose"
+
+[node name="Lose-Text" type="Node2D" parent="Game Result/Control/PanelContainer/VBoxContainer" unique_id=2011086204]
+
+[node name="Bubble2" type="Sprite2D" parent="Game Result/Control/PanelContainer/VBoxContainer/Lose-Text" unique_id=645514129]
+position = Vector2(561, 416.00003)
+scale = Vector2(0.46265557, 0.4626556)
+texture = ExtResource("43_o8ni1")
+
+[node name="Label" type="Label" parent="Game Result/Control/PanelContainer/VBoxContainer/Lose-Text/Bubble2" unique_id=866800012]
+offset_left = -259.37222
+offset_top = -21.61435
+offset_right = 253.62778
+offset_bottom = 33.38565
+theme_override_colors/font_color = Color(0.23921569, 0.23921569, 0.23921569, 1)
+theme_override_font_sizes/font_size = 40
+text = "...and now they found you."
+
+[node name="Bubble" type="Sprite2D" parent="Game Result/Control/PanelContainer/VBoxContainer/Lose-Text" unique_id=1568594609]
+position = Vector2(188, 175)
+scale = Vector2(0.46265557, 0.4626556)
+texture = ExtResource("43_o8ni1")
+
+[node name="Label" type="Label" parent="Game Result/Control/PanelContainer/VBoxContainer/Lose-Text/Bubble" unique_id=2145815737]
+offset_left = -237.75787
+offset_top = -21.61435
+offset_right = 243.24213
+offset_bottom = 33.38565
+theme_override_colors/font_color = Color(0.23921569, 0.23921569, 0.23921569, 1)
+theme_override_font_sizes/font_size = 40
+text = "You missed your target..."
+
+[node name="Win-Text" type="Node2D" parent="Game Result/Control/PanelContainer/VBoxContainer" unique_id=947798364]
+
+[node name="Bubble2" type="Sprite2D" parent="Game Result/Control/PanelContainer/VBoxContainer/Win-Text" unique_id=1036060442]
+position = Vector2(561, 416.00003)
+scale = Vector2(0.46265557, 0.4626556)
+texture = ExtResource("43_o8ni1")
+
+[node name="Label" type="Label" parent="Game Result/Control/PanelContainer/VBoxContainer/Win-Text/Bubble2" unique_id=1917018558]
+offset_left = -162.10764
+offset_top = -21.614416
+offset_right = 135.89236
+offset_bottom = 33.385582
+theme_override_colors/font_color = Color(0.23921569, 0.23921569, 0.23921569, 1)
+theme_override_font_sizes/font_size = 40
+text = "Excellent Work."
+
+[node name="Bubble" type="Sprite2D" parent="Game Result/Control/PanelContainer/VBoxContainer/Win-Text" unique_id=443063441]
+position = Vector2(188, 175)
+scale = Vector2(0.46265557, 0.4626556)
+texture = ExtResource("43_o8ni1")
+
+[node name="Label" type="Label" parent="Game Result/Control/PanelContainer/VBoxContainer/Win-Text/Bubble" unique_id=27836060]
+offset_left = -190.2063
+offset_top = -21.61435
+offset_right = 183.7937
+offset_bottom = 33.38565
+theme_override_colors/font_color = Color(0.23921569, 0.23921569, 0.23921569, 1)
+theme_override_font_sizes/font_size = 40
+text = "Target Eliminated..."
 
 [node name="Phone Call" type="Node" parent="." unique_id=228923896]
 
