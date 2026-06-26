@@ -19,6 +19,11 @@ config/icon="res://icon.svg"
 
 GameManager="*uid://cyvsu4r51y04h"
 
+[display]
+
+window/size/mode=2
+window/stretch/mode="viewport"
+
 [input]
 
 ui_accept={
